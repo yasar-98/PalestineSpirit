@@ -3,6 +3,7 @@ package com.goodguide.palestine_spirit.models;
 import java.util.Date;
 import java.util.List;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
@@ -40,6 +41,7 @@ public class Site {
 	@OneToMany(mappedBy = "site", fetch = FetchType.LAZY)
 	private List<Tour> tours;
 	
+	@Column(updatable=false)
 	private Date createdAt;
 	private Date updatedAt;
 

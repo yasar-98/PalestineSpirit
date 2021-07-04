@@ -2,6 +2,7 @@ package com.goodguide.palestine_spirit.models;
 
 import java.util.Date;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
@@ -31,6 +32,7 @@ public class Review {
     @JoinColumn(name="site_id")
 	private Site siteR;
 
+	@Column(updatable=false)
 	private Date createdAt;
 	private Date updatedAt;
 
