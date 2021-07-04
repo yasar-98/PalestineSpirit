@@ -3,6 +3,7 @@ package com.goodguide.palestine_spirit.models;
 import java.util.Date;
 import java.util.List;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
@@ -50,6 +51,7 @@ public class Tour {
 	@JoinTable(name = "reserve", joinColumns = @JoinColumn(name = "tour_id"), inverseJoinColumns = @JoinColumn(name = "user_id"))
 	private List<User> travellers;
 
+	@Column(updatable=false)
 	private Date createdAt;
 	private Date updatedAt;
 
