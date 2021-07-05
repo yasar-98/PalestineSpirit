@@ -1,64 +1,78 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-	pageEncoding="UTF-8"%>
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+	pageEncoding="ISO-8859-1"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form"%>
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!DOCTYPE html>
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Sign Page</title>
+<link
+	href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+	rel="stylesheet"
+	integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+	crossorigin="anonymous">
+<link rel="stylesheet" href="/css/main.css" />
+<meta charset="ISO-8859-1">
+<title>Event Planner</title>
 </head>
 <body>
-	<h1>Register!</h1>
-	<form:form method="POST" action="/registration" modelAttribute="user"
-	>
-	    <p>
-            <form:label path="username">Username:</form:label>
-            <form:input path="username"/>
-            <form:errors path="username"/>
-        </p>
-	
-        <p>
-            <form:label path="email">Email:</form:label>
-            <form:input type="email" path="email"/>
-            <form:errors path="email"/>
-        </p>
-        <p>
-            <form:label path="phoneNumber">Phone Number:</form:label>
-            <form:input path="phoneNumber"/>
-            <form:errors path="phoneNumber"/>
-        </p>        
-        <p>
-            <form:label path="password">Password:</form:label>
-            <form:password path="password"/>
-            <form:errors path="password"/>
-        </p>
-        <p>
-            <form:label path="passwordConfirmation">Password Confirmation:</form:label>
-            <form:password path="passwordConfirmation"/>
-            <form:errors path="passwordConfirmation"/>
-        </p>
-        <p>       
-            <input type="radio" name="role" value="USER" />Tourist 
-            <input type="radio" name="role" value="GUIDE" />Guide 
-         </p>	
-        <input type="submit" value="Register!" />
-	</form:form>
+	<div class="container">
+		<form:form class="user-form" action="/register" method="post"
+			modelAttribute="registration">
+			<h2>Register</h2>
+			<div class="form-group">
+				<form:label path="username">User Name</form:label>
+				<form:errors path="username" class="red"/>
+				<form:input class="form-control" path="username" />
+			</div>
+			<div class="form-group">
+				<form:label path="phoneNumber">Phone Number</form:label>
+				<form:errors path="phoneNumber" class="red" />
+				<form:input class="form-control" path="phoneNumber" />
+			</div>
+			<div class="form-group">
+				<form:label path="email">Email</form:label>
+				<form:errors path="email" class="red"/>
+				<form:input type="email" class="form-control" path="email" />
+			</div>
+			<div class="form-group">
+				<form:label path="password">Password</form:label>
+				<form:errors path="password" class="red"/>
+				<form:password class="form-control" path="password" />
+			</div>
+			<div class="form-group">
+				<form:label path="passwordConfirmation">Confirm Password</form:label>
+				<form:errors path="passwordConfirmation" class="red"/>
+				<form:password class="form-control" path="passwordConfirmation" />
+			</div>
+			<div class="wrap-input100 validate-input m-b-26">
+				<form:radiobutton name="role" path="role" value="1" checked="checked"/> 
+				Tourist 
+				<form:radiobutton name="role" path="role" value="2"/> Guide
+			</div>
+			<form:errors path="role" class="red"/>
+			<div class="flex-sb-m w-full p-b-30"></div>
 
-	<h1>Login</h1>
-	<p><c:out value="${error}" /></p>
-	<form method="POST" action="/login">
-		<p>
-			<label for="username">Username</label> <input type="text"
-				id="username" name="username" />
-		</p>
-		<p>
-			<label for="password">Password</label> <input type="password"
-				id="password" name="password" />
-		</p>
-		<input type="hidden" name="${_csrf.parameterName}"
-			value="${_csrf.token}" /> <input type="submit" value="Login!" />
-	</form>
+			<button class="btn btn-secondary">Register</button>
+
+		</form:form>
+		<br>
+
+		<form action="/login" class="user-form" method="post">
+			<h2>Login</h2>
+			<span class="red">${ error }</span>
+			<div class="form-group">
+				<label for="email">Email</label> <input type="email" name="email"
+					id="email" class="form-control" />
+			</div>
+			<div class="form-group">
+				<label for="password">Password</label> <input type="password"
+					name="password" id="password" class="form-control" />
+			</div>
+			<button class="btn btn-info">Login</button>
+
+		</form>
+	</div>
 </body>
 </html>
+
 

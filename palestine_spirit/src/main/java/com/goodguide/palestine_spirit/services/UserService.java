@@ -1,6 +1,7 @@
 package com.goodguide.palestine_spirit.services;
 
-import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+import org.mindrot.jbcrypt.BCrypt;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.goodguide.palestine_spirit.models.User;
@@ -9,39 +10,45 @@ import com.goodguide.palestine_spirit.repositories.UserRepository;
 
 @Service
 public class UserService {
-    private UserRepository userRepository;
+	@Autowired
+    private UserRepository uRepo;
     private RoleRepository roleRepository;
-    private BCryptPasswordEncoder bCryptPasswordEncoder;
     
-    public UserService(UserRepository userRepository, RoleRepository roleRepository, BCryptPasswordEncoder bCryptPasswordEncoder)     {
-        this.userRepository = userRepository;
-        this.roleRepository = roleRepository;
-        this.bCryptPasswordEncoder = bCryptPasswordEncoder;
+    public UserService(UserRepository userReposo, RoleRepository roleRe) {
+    	this.roleRepository = roleRe;
+    	this.uRepo = userReposo;
     }
     
-    
-    // 1
-    public void saveWithUserRole(User user) {
-        user.setPassword(bCryptPasswordEncoder.encode(user.getPassword()));
-        user.setRoles(roleRepository.findByName("ROLE_USER"));
-        userRepository.save(user);
-    }
-     
-     // 2 
-    public void saveUserWithAdminRole(User user) {
-        user.setPassword(bCryptPasswordEncoder.encode(user.getPassword()));
-        user.setRoles(roleRepository.findByName("ROLE_ADMIN"));
-        userRepository.save(user);
-    }    
-    
-    public void saveWithGuideRole(User user) {
-        user.setPassword(bCryptPasswordEncoder.encode(user.getPassword()));
-        user.setRoles(roleRepository.findByName("ROLE_Guide"));
-        userRepository.save(user);
-    }    
-
-    // 3
-    public User findByUsername(String username) {
-        return userRepository.findByUsername(username);
-    }
+	public User findById(Long id) {
+		return this.uRepo.findById(id).orElse(null);
+	}
+	public User registerUser(User user) {
+		String hashed = BCrypt.hashpw(user.getPassword(), BCrypt.gensalt());
+		user.setPassword(hashed);
+        user.setRole(roleRepository.findByName("ROLE_USER"));
+		return this.uRepo.save(user);
+	}
+	public User registerGuide(User user) {
+		String hashed = BCrypt.hashpw(user.getPassword(), BCrypt.gensalt());
+		user.setPassword(hashed);
+        user.setRole(roleRepository.findByName("ROLE_GUIDE"));
+		return this.uRepo.save(user);
+	}
+	public User registerAdmin(User user) {
+		String hashed = BCrypt.hashpw(user.getPassword(), BCrypt.gensalt());
+		user.setPassword(hashed);
+        user.setRole(roleRepository.findByName("ROLE_ADMIN"));
+		return this.uRepo.save(user);
+	}
+	public User getUserByEmail(String email) {
+		return this.uRepo.findByEmail(email);
+	}
+	public boolean authenticateUser(String email, String password) {
+		User user = this.uRepo.findByEmail(email);
+		if(user == null)
+			return false;
+		
+		return BCrypt.checkpw(password, user.getPassword());
+	}
 }
+
