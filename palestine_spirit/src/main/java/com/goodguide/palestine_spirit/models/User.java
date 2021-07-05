@@ -12,6 +12,7 @@ import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.JoinTable;
 import javax.persistence.ManyToMany;
+import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
 import javax.persistence.PrePersist;
 import javax.persistence.PreUpdate;
@@ -19,6 +20,8 @@ import javax.persistence.Table;
 import javax.persistence.Transient;
 import javax.validation.constraints.Email;
 import javax.validation.constraints.Size;
+
+import com.sun.istack.NotNull;
 
 @Entity
 @Table(name = "users")
@@ -44,9 +47,12 @@ public class User {
 	@Column(updatable = false)
 	private Date createdAt;
 	private Date updatedAt;
-	@ManyToMany(fetch = FetchType.EAGER)
-	@JoinTable(name = "users_roles", joinColumns = @JoinColumn(name = "user_id"), inverseJoinColumns = @JoinColumn(name = "role_id"))
-	private List<Role> roles;
+	
+    @ManyToOne(fetch = FetchType.EAGER)
+    @JoinColumn(name="role_id")
+	@NotNull
+    private Role role;
+
 
 	@ManyToMany(fetch = FetchType.LAZY)
 	@JoinTable(name = "reserve", joinColumns = @JoinColumn(name = "user_id"), inverseJoinColumns = @JoinColumn(name = "tour_id"))
@@ -126,12 +132,12 @@ public class User {
 		this.updatedAt = updatedAt;
 	}
 
-	public List<Role> getRoles() {
-		return roles;
+	public Role getRole() {
+		return role;
 	}
 
-	public void setRoles(List<Role> roles) {
-		this.roles = roles;
+	public void setRole(Role role) {
+		this.role = role;
 	}
 
 	public List<Tour> getRegister() {
