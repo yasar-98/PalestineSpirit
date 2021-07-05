@@ -10,10 +10,14 @@ import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
+import com.goodguide.palestine_spirit.models.Cit;
 import com.goodguide.palestine_spirit.models.Role;
+import com.goodguide.palestine_spirit.models.Site;
+import com.goodguide.palestine_spirit.models.Tour;
 import com.goodguide.palestine_spirit.models.User;
 import com.goodguide.palestine_spirit.services.UserService;
 import com.goodguide.palestine_spirit.validator.UserValidator;
@@ -71,4 +75,50 @@ public class UserController {
 		redirs.addFlashAttribute("error", "Invalid Email/Password");
 		return "redirect:/sign";
 	}
+
+		@RequestMapping("/userlist")
+	public String listofuser(Model model) {
+		
+		model.addAttribute("users",userService.allusers());
+		return "useradmin.jsp";
+	}
+	@RequestMapping("/createsite")
+	public String createnewcity(Model model) {
+	model.addAttribute("city", new Cit());
+	model.addAttribute("site", new Site());
+	model.addAttribute("cities", userService.allcities());
+	model.addAttribute("sites", userService.allsites());
+
+	return "newstateadmin.jsp";
+
+	}
+	
+	@RequestMapping("/trips")
+	public String trips(Model model) {
+	model.addAttribute("trip", new Tour());
+	model.addAttribute("sites", userService.allsites());
+
+	return "guidetrips.jsp";
+
+	}
+	@PostMapping("/createtrip")
+	public String createtrip(@ModelAttribute("trip") Tour newtour) {
+		System.out.print("newtrip");
+		userService.createtrip(newtour);
+		return "redirect:/trips";
+	}
+
+	@PostMapping("/createcity")
+	public String createcity(@ModelAttribute("city") Cit newcity) {
+		
+		userService.createcity(newcity);
+		return "redirect:/createsite";
+	}
+	@PostMapping("/createsite")
+	public String createnewsite(@Valid @ModelAttribute("site") Site newsite,Model model) {
+		model.addAttribute("city", new Cit());
+		userService.createsite(newsite);
+		return "redirect:/createsite";
+	}
+	
 }

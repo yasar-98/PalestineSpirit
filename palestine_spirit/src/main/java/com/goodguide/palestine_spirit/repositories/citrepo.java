@@ -5,10 +5,10 @@ import java.util.List;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 
-import com.goodguide.palestine_spirit.models.User;
-
+import com.goodguide.palestine_spirit.models.Cit;
 @Repository
-public interface UserRepository extends CrudRepository<User, Long>{
-	User findByEmail(String email);
-	List<User> findAll();
+public interface citrepo extends CrudRepository<Cit, Long> {
+
+	List<Cit> findAll();
+	
 }

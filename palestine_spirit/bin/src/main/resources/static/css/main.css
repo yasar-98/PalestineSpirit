@@ -1,0 +1,9 @@
+.user-form {
+	display: inline-block;
+	width: 45%;
+	vertical-align: top;
+	margin: 20px;
+}
+.red{
+	color: red;
+}
