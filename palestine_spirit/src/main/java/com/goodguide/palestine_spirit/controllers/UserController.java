@@ -58,13 +58,13 @@ public class UserController {
 			session.setAttribute("userId", user.getId());
 
 			System.out.println("333");
-			return "redirect:/";
+			return "redirect:/sendmail/"+newUser.getEmail();
 		} else if (user.getRole().getName().equals("ROLE_GUIDE")) {
 			System.out.println("444");
 			User newUser = userService.registerGuide(user);
 			session.setAttribute("userId", user.getId());
 
-			return "redirect:/";
+			return "redirect:/sendmail/"+newUser.getEmail();
 		}
 		return "redirect:/";
 
@@ -214,5 +214,12 @@ public class UserController {
 
 		return "redirect:/tours";
 	}
+    @RequestMapping("/sendmail/{mailTo}")
+    public String sendEmail(@PathVariable("mailTo") String reciever) {
+        String message = " Thank you for using our website. ";
+        System.out.println("sending new mail to... "+reciever+message);
+        userService.sendingMail(reciever, message, "Welcome");
+        return "redirect:/";
+    }
 
 }

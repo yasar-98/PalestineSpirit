@@ -4,6 +4,8 @@ import java.util.List;
 
 import org.mindrot.jbcrypt.BCrypt;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.mail.SimpleMailMessage;
+import org.springframework.mail.javamail.JavaMailSender;
 import org.springframework.stereotype.Service;
 
 import com.goodguide.palestine_spirit.models.Cit;
@@ -18,6 +20,9 @@ import com.goodguide.palestine_spirit.repositories.tourrepo;
 
 @Service
 public class UserService {
+	@Autowired
+    private JavaMailSender jMS;
+
 	@Autowired
     private UserRepository uRepo;
     private RoleRepository roleRepository;
@@ -107,6 +112,14 @@ public Cit createcity (Cit newcity) {
 	public Tour findTourById(Long id) {
 		return this.tors.findById(id).orElse(null);
 	}
+    public void sendingMail(String sendTo, String messageBody, String messageTitle) {
+    SimpleMailMessage sMM = new SimpleMailMessage();
+    sMM.setFrom("yasar.m.naser@gmail.com");
+    sMM.setTo(sendTo);
+    sMM.setSubject(messageTitle);
+    sMM.setText(messageBody);
+    jMS.send(sMM);
+}
 
 }
 
