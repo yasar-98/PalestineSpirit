@@ -1,5 +1,7 @@
 package com.goodguide.palestine_spirit.controllers;
 
+import java.util.List;
+
 import javax.servlet.http.HttpSession;
 import javax.validation.Valid;
 
@@ -12,6 +14,7 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
@@ -19,6 +22,9 @@ import com.goodguide.palestine_spirit.models.Cit;
 import com.goodguide.palestine_spirit.models.Site;
 import com.goodguide.palestine_spirit.models.Tour;
 import com.goodguide.palestine_spirit.models.User;
+import com.goodguide.palestine_spirit.services.CityService;
+import com.goodguide.palestine_spirit.services.SiteService;
+import com.goodguide.palestine_spirit.services.TourService;
 import com.goodguide.palestine_spirit.services.UserService;
 import com.goodguide.palestine_spirit.validator.UserValidator;
 
@@ -28,15 +34,28 @@ public class UserController {
 	private UserService userService;
 	@Autowired
 	private UserValidator validator;
+	private final CityService cityService;
+	private final SiteService siteService;
+	private final TourService tourService;
 
-	@GetMapping("/")
-	public String Index() {
-		return "home.jsp";
+public UserController(UserService userService, UserValidator validator, CityService cityService,
+			SiteService siteService, TourService tourService) {
+		super();
+		this.userService = userService;
+		this.validator = validator;
+		this.cityService = cityService;
+		this.siteService = siteService;
+		this.tourService = tourService;
 	}
-	@GetMapping("/Nablus")
-	public String Nablus() {
-		return "Hebron.jsp";
-	}
+
+//	@GetMapping("/")
+//	public String Index() {
+//		return "home.jsp";
+//	}
+//	@GetMapping("/Nablus")
+//	public String Nablus() {
+//		return "Hebron.jsp";
+//	}
 	@GetMapping("/sign")
 	public String sign(@ModelAttribute("registration") User user, Model model) {
 		return "signPage.jsp";
@@ -225,4 +244,177 @@ public class UserController {
         return "redirect:/";
     }
 
+//////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+	//render cities pages
+	@RequestMapping("/{id}")
+	public String renderCityPage(@PathVariable("id")Long id) {
+		Cit cityInfo = cityService.findCityById(id);
+		String name= cityInfo.getName();
+		return "redirect:/"+name;
+	}
+	
+	
+	//Rendering each city :
+	
+	//Nablus:
+	@RequestMapping("/Nablus")
+	public String renderNablusPage(Model model) {
+		Long id =(long) 1;
+		List <Site> citySites = cityService.findCityById(id).getSites();
+		model.addAttribute("sites",citySites );
+		return "Nablus.jsp";
+	}
+	
+	//Hebron:
+	@RequestMapping("/Hebron")
+	public String renderHebronPage(Model model) {
+		Long id =(long) 2;
+		List <Site> citySites = cityService.findCityById(id).getSites();
+		model.addAttribute("sites",citySites );
+		return "Hebron.jsp";
+	}
+	
+	//Jerusalem:
+	@RequestMapping("/Jerusalem")
+	public String renderJerusalemPage(Model model) {
+		Long id =(long) 3;
+		List <Site> citySites = cityService.findCityById(id).getSites();
+		model.addAttribute("sites",citySites );
+		return "Jerusalem.jsp";
+	}
+	
+	//Jericho:
+	@RequestMapping("/Jericho")
+	public String renderJerichoPage(Model model) {
+		Long id =(long) 4;
+		List <Site> citySites = cityService.findCityById(id).getSites();
+		model.addAttribute("sites",citySites );
+		return "Jericho.jsp";
+	}
+	
+	//Bethlehem:
+	@RequestMapping("/Bethlehem")
+	public String renderBethlehemPage(Model model) {
+		Long id =(long) 5;
+		List <Site> citySites = cityService.findCityById(id).getSites();
+		model.addAttribute("sites",citySites );
+		return "Bethlehem.jsp";
+	}
+
+	
+	
+	
+	
+	
+//	//render new city page :
+//	@RequestMapping("/city/new")
+//	public String city(@ModelAttribute("city") Cit city, Model model) {
+////		List<Site> listSites = siteService.findAllSites();
+////		model.addAttribute("sites", listSites);
+//		return "city.jsp";
+//	}
+//	
+//
+//	//add a new city
+//	@RequestMapping(value="/city/new", method=RequestMethod.POST)
+//	public String createCity(@Valid @ModelAttribute("city")Cit city, BindingResult result) {
+//		if (result.hasErrors()) {
+//			return "city.jsp";
+//		}
+//		else {
+//			cityService.createCity(city);
+//			return "redirect:/city/new";
+//		}
+//		
+//	}
+	
+	
+	
+	
+//	//Render new site page:
+//	@RequestMapping("/sites/new")
+//	public String newSite(@ModelAttribute("site") Site site) {
+//		return "site.jsp";
+//	}
+//
+//	
+//	//create a new site:
+//	@RequestMapping(value = "/sites/new", method = RequestMethod.POST)
+//	public String createSite(@Valid @ModelAttribute("site") Site site, BindingResult result) {
+//		if (result.hasErrors()) {
+//			return "site.jsp";
+//		} else {
+//			siteService.createSite(site);
+//			return "redirect:/sites/new";
+//		}
+//	}
+	
+
+	//Render Home Page: 
+	@RequestMapping("/")
+	public String renderHomePage(Model model) {
+		model.addAttribute("cities", cityService.allCities());
+		return "home.jsp";
+	}
+	
+	
+	
+	//Render the site pages :
+	
+	
+//	@RequestMapping("/s/{id}")
+//	public String renderSitePage(@PathVariable("id")Long id) {
+//		Site siteInfo = siteService.findSiteById(id);
+//		String nameS= siteInfo.getName();
+//		return "redirect:/"+nameS;
+//	}
+	
+	
+	
+//	@RequestMapping("/OldTownHebron")
+//	public String renderOldTownHebronPage(Model model) {
+//		model.addAttribute("sites", siteService.findAllSites().get(0));
+//		return "OldTownHebron.jsp";
+//	}
+
+	
+	
+	@RequestMapping("/ArchaeologicalSite/{id}")
+	public String renderSitePage(@PathVariable("id")Long id, Model model) {
+		model.addAttribute("site", siteService.findSiteById(id));
+		List <Tour> siteTours =siteService.findSiteById(id).getTours();
+		model.addAttribute("tours", siteTours);
+		return "OldTownHebron.jsp";
+	}
+	@GetMapping("/ArchaeologicalSite/{id}")
+	public String Show(@PathVariable("id") Long id, Model model, HttpSession session) {
+		User user = userService.findById((Long) session.getAttribute("userId"));
+		Site site = siteService.findSiteById(id);
+		if(user == null)
+			return "redirect:/sign";
+		if(site == null)
+			return "redirect:/sign";
+		List <Tour> siteTours =siteService.findSiteById(id).getTours();
+		model.addAttribute("tours", siteTours);
+
+		model.addAttribute("site", site);
+		model.addAttribute("userId", user);
+		return "OldTownHebron.jsp";
+	}
+	@PostMapping("/{id}/comment")
+	public String Comment(@PathVariable("id") Long id, @RequestParam("comment") String comment, RedirectAttributes redirs, HttpSession session) {
+		User user = userService.findById((Long) session.getAttribute("userId"));
+		if(user == null)
+			return "redirect:/sign";
+		if(comment.equals("")) {
+			redirs.addFlashAttribute("error", "Review must not be blank");
+			return "redirect:/ArchaeologicalSite/" + id ;
+		}
+		Site site = siteService.findSiteById(id);
+		userService.comment(comment,user, site);
+		return "redirect:/ArchaeologicalSite/" + id;
+	}
 }

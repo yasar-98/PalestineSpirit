@@ -1,5 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+
 <!DOCTYPE html>
 <html style="font-size: 16px;">
   <head>
@@ -54,7 +56,7 @@
             </a>
           </div>
           <div class="u-custom-menu u-nav-container">
-            <ul class="u-nav u-spacing-2 u-unstyled u-nav-1"><li class="u-nav-item"><a class="u-border-2 u-border-active-white u-border-hover-white u-button-style u-nav-link u-text-active-white u-text-hover-white u-text-white" href="Home.html" style="padding: 10px 20px;">Home</a>
+            <ul class="u-nav u-spacing-2 u-unstyled u-nav-1"><li class="u-nav-item"><a class="u-border-2 u-border-active-white u-border-hover-white u-button-style u-nav-link u-text-active-white u-text-hover-white u-text-white" href="/home" style="padding: 10px 20px;">Home</a>
 </li><li class="u-nav-item"><a class="u-border-2 u-border-active-white u-border-hover-white u-button-style u-nav-link u-text-active-white u-text-hover-white u-text-white" href="Tours.html" style="padding: 10px 20px;">Tours</a>
 </li><li class="u-nav-item"><a class="u-border-2 u-border-active-white u-border-hover-white u-button-style u-nav-link u-text-active-white u-text-hover-white u-text-white" href="Contact.html" style="padding: 10px 20px;">Contact</a>
 </li></ul>
@@ -63,7 +65,7 @@
             <div class="u-align-center u-black u-container-style u-inner-container-layout u-opacity u-opacity-95 u-sidenav">
               <div class="u-sidenav-overflow">
                 <div class="u-menu-close"></div>
-                <ul class="u-align-center u-nav u-popupmenu-items u-unstyled u-nav-2"><li class="u-nav-item"><a class="u-button-style u-nav-link" href="Home.html" style="padding: 10px 20px;">Home</a>
+                <ul class="u-align-center u-nav u-popupmenu-items u-unstyled u-nav-2"><li class="u-nav-item"><a class="u-button-style u-nav-link" href="/home" style="padding: 10px 20px;">Home</a>
 </li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="Tours.html" style="padding: 10px 20px;">Tours</a>
 </li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="Contact.html" style="padding: 10px 20px;">Contact</a>
 </li></ul>
@@ -164,9 +166,9 @@
       <div class="u-clearfix u-sheet u-sheet-1">
         <div class="u-container-style u-expanded-width-sm u-expanded-width-xs u-group u-similar-fill u-group-1">
           <div class="u-container-layout u-container-layout-1">
-            <h2 class="u-align-center u-custom-font u-text u-text-palette-1-base u-text-1">Cities</h2>
+            <h2 class="u-align-center u-custom-font u-text u-text-palette-1-base u-text-1">Archaeological Sites in Jericho</h2>
             <div class="u-border-2 u-border-palette-1-base u-line u-line-horizontal u-line-1"></div>
-            <p class="u-align-center u-text u-text-font u-text-2">The first place to look for environmentally friendly holidays </p>
+            <p class="u-align-center u-text u-text-font u-text-2">The first place to look for a great adventure </p>
           </div>
         </div>
         <div class="u-expanded-width u-shape u-shape-rectangle u-white u-shape-1"></div>
@@ -177,54 +179,17 @@
       <div class="u-clearfix u-sheet u-sheet-1">
         <div class="u-list u-list-1">
           <div class="u-repeater u-repeater-1">
-            <div class="u-container-style u-list-item u-repeater-item">
-              <div class="u-container-layout u-similar-container u-container-layout-1">
-                <img alt="" class="u-expanded-width u-image u-image-default u-image-1" data-image-width="550" data-image-height="366" src="images/nablus.jpeg">
-                <h3 class="u-text u-text-1">Nablus</h3>
-                <p class="u-text u-text-2">Sample text. Click to select the text box. Click again or double click to start editing the text.</p>
-                <a href="" class="u-active-none u-border-2 u-border-hover-palette-2-base u-border-palette-2-light-1 u-btn u-button-style u-hover-none u-none u-text-body-color u-btn-1">learn more</a>
-              </div>
-            </div>
-            <div class="u-container-style u-list-item u-repeater-item">
-              <div class="u-container-layout u-similar-container u-container-layout-2">
-                <img alt="" class="u-expanded-width u-image u-image-default u-image-2" data-image-width="550" data-image-height="367" src="images/ramallah.jpeg">
-                <h3 class="u-text u-text-3">Ramallah</h3>
-                <p class="u-text u-text-4">Sample text. Click to select the text box. Click again or double click to start editing the text.</p>
-                <a href="" class="u-active-none u-border-2 u-border-hover-palette-2-base u-border-palette-2-light-1 u-btn u-button-style u-hover-none u-none u-text-body-color u-btn-2">learn more</a>
-              </div>
-            </div>
-            <div class="u-container-style u-list-item u-repeater-item">
-              <div class="u-container-layout u-similar-container u-container-layout-3">
-                <img alt="" class="u-expanded-width u-image u-image-default u-image-3" data-image-width="550" data-image-height="367" src="images/hebron.jpeg">
-                <h3 class="u-text u-text-5">Hebron</h3>
-                <p class="u-text u-text-6">Sample text. Click to select the text box. Click again or double click to start editing the text.</p>
-                <a href="" class="u-active-none u-border-2 u-border-hover-palette-2-base u-border-palette-2-light-1 u-btn u-button-style u-hover-none u-none u-text-body-color u-btn-3">learn more</a>
-              </div>
-            </div>
-            <div class="u-container-style u-list-item u-repeater-item">
-              <div class="u-container-layout u-similar-container u-container-layout-4">
-                <img alt="" class="u-expanded-width u-image u-image-default u-image-4" data-image-width="550" data-image-height="413" src="images/10.jpeg">
-                <h3 class="u-text u-text-7">Sample Headline</h3>
-                <p class="u-text u-text-8">Sample text. Click to select the text box. Click again or double click to start editing the text.</p>
-                <a href="" class="u-active-none u-border-2 u-border-hover-palette-2-base u-border-palette-2-light-1 u-btn u-button-style u-hover-none u-none u-text-body-color u-btn-4">learn more</a>
-              </div>
-            </div>
-            <div class="u-container-style u-list-item u-repeater-item">
-              <div class="u-container-layout u-similar-container u-container-layout-5">
-                <img alt="" class="u-expanded-width u-image u-image-default u-image-5" data-image-width="550" data-image-height="366" src="images/gaza.jpeg">
-                <h3 class="u-text u-text-9">Gaza</h3>
-                <p class="u-text u-text-10">Sample text. Click to select the text box. Click again or double click to start editing the text.</p>
-                <a href="" class="u-active-none u-border-2 u-border-hover-palette-2-base u-border-palette-2-light-1 u-btn u-button-style u-hover-none u-none u-text-body-color u-btn-5">learn more</a>
-              </div>
-            </div>
-            <div class="u-container-style u-list-item u-repeater-item">
-              <div class="u-container-layout u-similar-container u-container-layout-6">
-                <img alt="" class="u-expanded-width u-image u-image-default u-image-6" data-image-width="550" data-image-height="424" src="images/bet.jpeg">
-                <h3 class="u-text u-text-11">Bethlehem</h3>
-                <p class="u-text u-text-12">Sample text. Click to select the text box. Click again or double click to start editing the text.</p>
-                <a href="" class="u-active-none u-border-2 u-border-hover-palette-2-base u-border-palette-2-light-1 u-btn u-button-style u-hover-none u-none u-text-body-color u-btn-6">learn more</a>
-              </div>
-            </div>
+            	<c:forEach items="${sites}" var="site">
+	            <div class="u-container-style u-list-item u-repeater-item">
+	              <div class="u-container-layout u-similar-container u-container-layout-1">
+	                <img alt="" class="u-expanded-width u-image u-image-default u-image-1" data-image-width="550" data-image-height="366" src="images/${site.name}.jpeg">
+	                <h3 class="u-text u-text-1"><c:out value="${site.name }"></c:out></h3>
+	                <p class="u-text u-text-2">Sample text. Click to select the text box. Click again or double click to start editing the text.</p>
+	                <a href="/ArchaeologicalSite/${site.id}" class="u-active-none u-border-2 u-border-hover-palette-2-base u-border-palette-2-light-1 u-btn u-button-style u-hover-none u-none u-text-body-color u-btn-1">learn more</a>
+	              </div>
+	            </div>
+            </c:forEach>
+            
           </div>
         </div>
       </div>

@@ -9,9 +9,11 @@ import org.springframework.mail.javamail.JavaMailSender;
 import org.springframework.stereotype.Service;
 
 import com.goodguide.palestine_spirit.models.Cit;
+import com.goodguide.palestine_spirit.models.Review;
 import com.goodguide.palestine_spirit.models.Site;
 import com.goodguide.palestine_spirit.models.Tour;
 import com.goodguide.palestine_spirit.models.User;
+import com.goodguide.palestine_spirit.repositories.MessageRepository;
 import com.goodguide.palestine_spirit.repositories.RoleRepository;
 import com.goodguide.palestine_spirit.repositories.Siterepo;
 import com.goodguide.palestine_spirit.repositories.UserRepository;
@@ -29,18 +31,26 @@ public class UserService {
 	private citrepo city;
 	private Siterepo site;
 	private tourrepo tors;
+	@Autowired
+	private MessageRepository mRepo;
 
   
     
 	public UserService(UserRepository uRepo, RoleRepository roleRepository, citrepo city, Siterepo site,
-			tourrepo tors) {
+			tourrepo tors, MessageRepository mRepo) {
 		super();
 		this.uRepo = uRepo;
 		this.roleRepository = roleRepository;
 		this.city = city;
 		this.site = site;
 		this.tors = tors;
+		this.mRepo = mRepo;
 	}
+
+	public void comment(String comment, User user, Site site) {
+		this.mRepo.save(new Review(comment,user, site));
+	}
+
 	public User findById(Long id) {
 		return this.uRepo.findById(id).orElse(null);
 	}

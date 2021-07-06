@@ -1,5 +1,5 @@
 .u-section-1 {
-  background-image: linear-gradient(0deg, rgba(0,0,0,0.15), rgba(0,0,0,0.15)), url("images/bethlehem.jpeg");
+  background-image: linear-gradient(0deg, rgba(0,0,0,0.15), rgba(0,0,0,0.15)), url("bethlehem.jpeg");
   background-position: 50% 50%;
   min-height: 790px;
 }
@@ -12,7 +12,7 @@
 .u-section-1 .u-image-1 {
   min-height: 806px;
   animation-duration: 1000ms;
-  background-image: linear-gradient(0deg, rgba(0,0,0,0.15), rgba(0,0,0,0.15)), url("images/bethlehem.jpeg");
+  background-image: linear-gradient(0deg, rgba(0,0,0,0.15), rgba(0,0,0,0.15)), url("bethlehem.jpeg");
   background-position: 50% 50%;
 }
 
@@ -543,7 +543,7 @@
     margin-left: 0;
   }
 }.u-section-6 {
-  background-image: url("images/5b3b651664a1977b1d76d6d8ec151dc9.jpeg");
+  background-image: url("5b3b651664a1977b1d76d6d8ec151dc9.jpeg");
   background-position: 50% 50%;
 }
 

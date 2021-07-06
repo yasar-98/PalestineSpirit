@@ -36,7 +36,7 @@
 					<th><c:out value="${tour.capacity }"></c:out></th>
 					<th><fmt:formatDate value="${tour.date}" pattern="yyyy-MM-dd" /></th>
 					<th><c:choose>
-							<c:when test="${ tour.travellers.contains(user) }">
+							<c:when test="${ tour.travellers.contains(user)}">
 								<span>Joining <a href="/tours/${ tour.id }/a/cancel">Cancel</a></span>
 							</c:when>
 							<c:otherwise>

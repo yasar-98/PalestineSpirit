@@ -36,6 +36,15 @@ public class Review {
 	private Date createdAt;
 	private Date updatedAt;
 
+	public Review() {
+	}
+
+	public Review(String content, User siteU, Site siteR) {
+		this.content = content;
+		this.siteU = siteU;
+		this.siteR = siteR;
+	}
+
 	public Long getId() {
 		return id;
 	}

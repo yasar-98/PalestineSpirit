@@ -87,9 +87,8 @@
         </nav>
 
         <a href="/"><h6 class="u-custom-font u-text u-text-white u-text-1">Palestine Spirit</h6></a>
-
-        <button type="button" class="btn btn-primary btn-sm" style="position: absolute; right: -80; top: 38%;">Login/Register</button>
-      </div>
+		
+        <a href="/sign"><button type="button" class="btn btn-primary btn-sm" style="position: absolute; right: -80; top: 38%;">Login/Register</button></a></div>
     </header>
     <section class="u-align-center u-clearfix u-section-1" id="carousel_4ddd">
       <img class="u-image u-image-1" src="images/default-image.jpg" data-image-width="2000" data-image-height="1333">
@@ -237,7 +236,7 @@
 </g>
 </g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg></span>
                   <h4 class="u-text u-text-1">Holiday Types</h4>
-                  <p class="u-text u-text-font u-text-grey-dark-1 u-text-2">Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam.</p>
+                  <p class="u-text u-text-font u-text-grey-dark-1 u-text-2"></p>
                   <div class="u-border-2 u-border-palette-1-base u-line u-line-horizontal u-line-1"></div>
                 </div>
               </div>
@@ -250,7 +249,7 @@
 </g>
 </g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg></span>
                   <h4 class="u-text u-text-3">Travel Guides</h4>
-                  <p class="u-text u-text-font u-text-grey-dark-1 u-text-4">Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam.</p>
+                  <p class="u-text u-text-font u-text-grey-dark-1 u-text-4"></p>
                   <div class="u-border-2 u-border-palette-1-base u-line u-line-horizontal u-line-2"></div>
                 </div>
               </div>
@@ -263,7 +262,7 @@
 </g>
 </g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg></span>
                   <h4 class="u-text u-text-5">Extreme Tours</h4>
-                  <p class="u-text u-text-font u-text-grey-dark-1 u-text-6">Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam.</p>
+                  <p class="u-text u-text-font u-text-grey-dark-1 u-text-6"></p>
                   <div class="u-border-2 u-border-palette-1-base u-line u-line-horizontal u-line-3"></div>
                 </div>
               </div>
@@ -271,7 +270,7 @@
                 <div class="u-container-layout u-valign-top u-container-layout-4"><span class="u-icon u-icon-circle u-text-palette-1-base u-icon-4"><svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 471.386 471.386"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-6661"></use></svg><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="svg-6661" x="0px" y="0px" viewBox="0 0 471.386 471.386" style="enable-background:new 0 0 471.386 471.386;" xml:space="preserve" class="u-svg-content"><g><path d="M445.769,456.386h-80.993v-15.368c0-35.193-9.385-62.355-27.894-80.732c-21.145-20.993-47.152-23.22-53.152-23.447   c57.697-29.512,97.285-89.571,97.285-158.705c0-72.449-43.478-134.928-105.711-162.732c-0.5-0.29-1.024-0.523-1.566-0.687   C252.01,5.258,228.051,0,202.883,0C104.66,0,24.751,79.91,24.751,178.133c0,69.347,39.836,129.559,97.821,158.972   c-9.635,0.973-31.311,5.171-49.448,23.18c-18.509,18.377-27.893,45.54-27.893,80.732v15.368H24.273c-4.143,0-7.5,3.358-7.5,7.5   c0,4.142,3.357,7.5,7.5,7.5h421.496c4.143,0,7.5-3.358,7.5-7.5C453.269,459.744,449.911,456.386,445.769,456.386z M202.883,341.266   c-7.73,0-15.333-0.553-22.78-1.598v-10.82c7.174,1.836,14.973,3.118,23.472,3.668c0.162,0.01,0.323,0.016,0.485,0.016h1.887   c0.162,0,0.323-0.005,0.485-0.016c8.499-0.551,16.298-1.832,23.472-3.668v10.167C221.111,340.488,212.087,341.266,202.883,341.266z    M205.673,119.124c-0.204,0-0.404,0.015-0.604,0.03c-0.199-0.016-0.399-0.03-0.604-0.03c-34.138,0-44.753-6.248-46.313-7.314   c-1.608-2.124-3.725-2.523-6.434-2.134c-8.124,1.171-16.222,5.772-23.531,11.618c0.36-0.585,0.729-1.17,1.105-1.756   c16.804-26.092,42.038-40.434,75.012-42.63h1.395c32.767,2.184,57.904,16.371,74.713,42.169c0.436,0.669,0.858,1.338,1.272,2.005   c-7.239-5.744-15.239-10.248-23.266-11.406c-2.707-0.391-4.826,0.01-6.434,2.134C250.426,112.876,239.811,119.124,205.673,119.124z    M113.785,160.157c0.021-0.09,0.05-0.179,0.068-0.27c3.007-5.747,21.724-30.126,37.3-34.76c2.046,1.203,4.984,2.58,9.137,3.888   c10.76,3.39,25.622,5.109,44.176,5.109c0.204,0,0.404-0.015,0.604-0.03c0.199,0.016,0.399,0.03,0.604,0.03   c18.554,0,33.417-1.719,44.177-5.109c4.151-1.308,7.09-2.685,9.136-3.888c15.48,4.604,34.053,28.701,37.235,34.642v76.691   c-0.529,3.061-3.936,20.472-15.509,38.442c-16.804,26.092-42.038,40.434-75.012,42.63h-1.395   c-32.767-2.184-57.904-16.371-74.713-42.169c-11.735-18.011-15.267-35.842-15.808-38.914V160.157z M39.751,178.133   C39.751,88.181,112.932,15,202.883,15c19.403,0,38.023,3.412,55.3,9.657l-14.337,14.337c-2.929,2.929-2.929,7.678,0,10.606   c1.465,1.464,3.385,2.197,5.304,2.197c1.919,0,3.839-0.732,5.304-2.197l18.681-18.681c2.994,1.435,5.935,2.963,8.825,4.572   l-15.706,15.707c-2.929,2.929-2.929,7.678,0.001,10.607c1.464,1.464,3.384,2.196,5.303,2.196c1.919,0,3.839-0.733,5.304-2.197   l18.193-18.195c42.821,29.432,70.961,78.75,70.961,134.523c0,75.427-51.459,139.052-121.111,157.636v-10.686   c0-0.397-0.04-0.783-0.1-1.163c24.057-9.941,39.262-26.521,48.519-40.896c14.433-22.41,17.689-43.977,17.819-44.884   c0.052-0.356,0.078-0.716,0.078-1.076v-78.729c0-0.144-0.014-0.285-0.022-0.427c0.037-0.526,0.023-1.064-0.057-1.607   c-0.131-0.907-3.387-22.474-17.819-44.884c-13.448-20.882-39.439-46.418-86.892-49.493c-0.162-0.01-0.323-0.016-0.485-0.016h-1.887   c-0.162,0-0.323,0.005-0.485,0.016c-47.452,3.075-73.443,28.611-86.892,49.493c-14.433,22.41-17.688,43.977-17.819,44.884   c-0.079,0.544-0.094,1.081-0.057,1.607c-0.008,0.142-0.021,0.283-0.021,0.427v78.729c0,0.36,0.026,0.72,0.078,1.076   c0.131,0.907,3.387,22.474,17.819,44.884c9.258,14.375,24.463,30.956,48.52,40.896c-0.06,0.38-0.1,0.767-0.1,1.163v11.729h-0.117   C93.251,319.68,39.751,255.041,39.751,178.133z M60.231,441.018c0-88.177,64.527-89.206,67.301-89.206h35.7   c12.756,2.911,26.026,4.454,39.651,4.454s26.895-1.543,39.651-4.454h39.994c0.002,0,0.005,0,0.009,0   c0.594,0,24.708,0.187,43.775,19.118c15.569,15.457,23.463,39.039,23.463,70.088v15.368H60.231V441.018z"></path><circle cx="151.767" cy="183.719" r="8.951"></circle><circle cx="258.239" cy="183.719" r="8.951"></circle><path d="M203.068,236.447h3.869c9.925,0,18-8.075,18-18c0-4.142-3.357-7.5-7.5-7.5c-4.143,0-7.5,3.358-7.5,7.5c0,1.654-1.346,3-3,3   h-3.869c-1.654,0-3-1.346-3-3c0-4.142-3.357-7.5-7.5-7.5c-4.143,0-7.5,3.358-7.5,7.5   C185.068,228.372,193.144,236.447,203.068,236.447z"></path><path d="M163.027,396.728H110.48c-4.143,0-7.5,3.358-7.5,7.5c0,4.142,3.357,7.5,7.5,7.5h52.548c4.143,0,7.5-3.358,7.5-7.5   C170.527,400.086,167.17,396.728,163.027,396.728z"></path><path d="M299.526,396.728h-52.548c-4.143,0-7.5,3.358-7.5,7.5c0,4.142,3.357,7.5,7.5,7.5h52.548c4.142,0,7.5-3.358,7.5-7.5   C307.026,400.086,303.669,396.728,299.526,396.728z"></path><path d="M163.027,425.728H110.48c-4.143,0-7.5,3.358-7.5,7.5c0,4.142,3.357,7.5,7.5,7.5h52.548c4.143,0,7.5-3.358,7.5-7.5   C170.527,429.086,167.17,425.728,163.027,425.728z"></path><path d="M299.526,425.728h-52.548c-4.143,0-7.5,3.358-7.5,7.5c0,4.142,3.357,7.5,7.5,7.5h52.548c4.142,0,7.5-3.358,7.5-7.5   C307.026,429.086,303.669,425.728,299.526,425.728z"></path><circle cx="205.003" cy="404.226" r="6.955"></circle><circle cx="205.003" cy="433.226" r="6.955"></circle><path d="M378.468,30.196c-6.472,13.374-4.167,29.927,6.931,41.024c7.011,7.01,16.198,10.515,25.387,10.515   c5.358,0,10.712-1.201,15.638-3.584c0.393,0.27,0.785,0.539,1.171,0.796c3.601,2.402,10.62,7.085,16.95,7.084   c2.614,0,5.113-0.799,7.202-2.889c6.784-6.783,0.261-18.105-6.452-27.403c3.471-12.134,0.435-25.737-9.122-35.293   c-7.011-7.01-16.198-10.515-25.387-10.515c-3.348,0-6.694,0.471-9.936,1.402c-0.131-0.107-0.259-0.216-0.398-0.315   c-9.001-6.422-20.201-12.924-26.975-6.145c-7.146,7.148,0.802,19.063,4.195,24.152C377.929,29.411,378.197,29.803,378.468,30.196z    M410.785,66.735c-5.583,0-10.832-2.174-14.78-6.122c-4.348-4.348-6.353-10.15-6.061-15.856c3.27,3.731,6.834,7.539,10.605,11.311   c3.775,3.775,7.586,7.342,11.32,10.614C411.508,66.701,411.149,66.735,410.785,66.735z M425.565,31.053   c7.787,7.787,8.114,20.229,1.021,28.431c-4.561-3.716-9.764-8.355-15.43-14.022c-5.668-5.668-10.309-10.871-14.025-15.432   c3.797-3.289,8.581-5.1,13.653-5.1C416.368,24.931,421.617,27.105,425.565,31.053z"></path><path d="M159.294,270.29c0.657,0.6,16.467,14.689,47.557,14.689c31.226,0,43.365-13.934,44.646-15.522   c2.6-3.225,2.095-7.946-1.13-10.546c-3.225-2.601-7.946-2.094-10.546,1.129c-0.08,0.1-9.089,9.939-32.971,9.939   c-24.809,0-36.903-10.295-37.494-10.812c-3.062-2.75-7.774-2.521-10.552,0.528C156.014,262.756,156.232,267.5,159.294,270.29z"></path>
 </g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg></span>
                   <h4 class="u-text u-text-7">Dream Vacation</h4>
-                  <p class="u-text u-text-font u-text-grey-dark-1 u-text-8">Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam.</p>
+                  <p class="u-text u-text-font u-text-grey-dark-1 u-text-8"></p>
                   <div class="u-border-2 u-border-palette-1-base u-line u-line-horizontal u-line-4"></div>
                 </div>
               </div>
@@ -296,46 +295,16 @@
       <div class="u-clearfix u-sheet u-sheet-1">
         <div class="u-list u-list-1">
           <div class="u-repeater u-repeater-1">
-            <div class="u-container-style u-list-item u-repeater-item">
-              <div class="u-container-layout u-similar-container u-container-layout-1">
-                <img alt="" class="u-expanded-width u-image u-image-default u-image-1" data-image-width="550" data-image-height="366" src="images/nablus.jpeg">
-                <h3 class="u-text u-text-1">Nablus</h3>
-                <p class="u-text u-text-2">Sample text. Click to select the text box. Click again or double click to start editing the text.</p>
-                <a href="" class="u-active-none u-border-2 u-border-hover-palette-2-base u-border-palette-2-light-1 u-btn u-button-style u-hover-none u-none u-text-body-color u-btn-1">learn more</a>
-              </div>
-            </div>
-            <div class="u-container-style u-list-item u-repeater-item">
-              <div class="u-container-layout u-similar-container u-container-layout-2">
-                <img alt="" class="u-expanded-width u-image u-image-default u-image-2" data-image-width="380" data-image-height="200" src="images/32016151431565552.jpeg">
-                <h3 class="u-text u-text-3">Jerusalem</h3>
-                <p class="u-text u-text-4">Sample text. Click to select the text box. Click again or double click to start editing the text.</p>
-                <a href="" class="u-active-none u-border-2 u-border-hover-palette-2-base u-border-palette-2-light-1 u-btn u-button-style u-hover-none u-none u-text-body-color u-btn-2">learn more</a>
-              </div>
-            </div>
-            <div class="u-container-style u-list-item u-repeater-item">
-              <div class="u-container-layout u-similar-container u-container-layout-3">
-                <img alt="" class="u-expanded-width u-image u-image-default u-image-3" data-image-width="550" data-image-height="367" src="images/hebron.jpeg">
-                <h3 class="u-text u-text-5">Hebron</h3>
-                <p class="u-text u-text-6">Sample text. Click to select the text box. Click again or double click to start editing the text.</p>
-                <a href="" class="u-active-none u-border-2 u-border-hover-palette-2-base u-border-palette-2-light-1 u-btn u-button-style u-hover-none u-none u-text-body-color u-btn-3">learn more</a>
-              </div>
-            </div>
-            <div class="u-container-style u-list-item u-repeater-item">
-              <div class="u-container-layout u-similar-container u-container-layout-5">
-                <img alt="" class="u-expanded-width u-image u-image-default u-image-5" data-image-width="550" data-image-height="366" src="images/jeric.jpg">
-                <h3 class="u-text u-text-9">Jericho</h3>
-                <p class="u-text u-text-10">Sample text. Click to select the text box. Click again or double click to start editing the text.</p>
-                <a href="" class="u-active-none u-border-2 u-border-hover-palette-2-base u-border-palette-2-light-1 u-btn u-button-style u-hover-none u-none u-text-body-color u-btn-5">learn more</a>
-              </div>
-            </div>
+           <c:forEach items="${ cities}" var="city">
             <div class="u-container-style u-list-item u-repeater-item">
               <div class="u-container-layout u-similar-container u-container-layout-6">
-                <img alt="" class="u-expanded-width u-image u-image-default u-image-6" data-image-width="550" data-image-height="424" src="images/bet.jpeg">
-                <h3 class="u-text u-text-11">Bethlehem</h3>
-                <p class="u-text u-text-12">Sample text. Click to select the text box. Click again or double click to start editing the text.</p>
-                <a href="" class="u-active-none u-border-2 u-border-hover-palette-2-base u-border-palette-2-light-1 u-btn u-button-style u-hover-none u-none u-text-body-color u-btn-6">learn more</a>
+                <img alt="" class="u-expanded-width u-image u-image-default u-image-6" data-image-width="550" data-image-height="424" src="images/${city.name}.jpeg">
+                <h3 class="u-text u-text-11"><c:out value="${city.name }"></c:out></h3>
+                <p class="u-text u-text-12"></p>
+                <a href="/${city.id}" class="u-active-none u-border-2 u-border-hover-palette-2-base u-border-palette-2-light-1 u-btn u-button-style u-hover-none u-none u-text-body-color u-btn-6">See more</a>
               </div>
             </div>
+            </c:forEach>
           </div>
         </div>
       </div>
