@@ -1,6 +1,11 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
     <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+    <link
+	href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+	rel="stylesheet"
+	integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+	crossorigin="anonymous">
     
 <!DOCTYPE html>
 <html style="font-size: 16px;">
@@ -37,7 +42,7 @@
     <meta property="og:type" content="website">
   </head>
   <body class="u-body u-overlap u-overlap-transparent"><header class="u-align-center-xs u-clearfix u-header u-header" id="sec-4f75"><div class="u-clearfix u-sheet u-sheet-1">
-        <form action="#" method="get" class="u-border-1 u-border-white u-radius-24 u-search u-search-right u-search-1">
+        <form action="#" method="get" class="u-border-1 u-border-white u-radius-24 u-search u-search-right u-search-1" style="margin-right: 40px;">
           <button class="u-search-button" type="submit">
             <span class="u-search-icon u-spacing-10 u-text-white">
               <svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 56.966 56.966" style=""><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-b04b"></use></svg>
@@ -46,6 +51,8 @@
           </button>
           <input class="u-search-input u-text-white" type="search" name="search" value="" placeholder="Search">
         </form>
+        
+
         <nav class="u-align-left u-menu u-menu-dropdown u-nav-spacing-25 u-offcanvas u-menu-1">
           <div class="menu-collapse">
             <a class="u-button-style u-nav-link" href="#" style="padding: 4px 0px; font-size: calc(1em + 8px);">
@@ -57,10 +64,13 @@
           <div class="u-custom-menu u-nav-container">
             <ul class="u-nav u-spacing-2 u-unstyled u-nav-1"><li class="u-nav-item"><a class="u-border-2 u-border-active-white u-border-hover-white u-button-style u-nav-link u-text-active-white u-text-hover-white u-text-white" href="/" style="padding: 10px 20px;">Home</a>
 </li><li class="u-nav-item"><a class="u-border-2 u-border-active-white u-border-hover-white u-button-style u-nav-link u-text-active-white u-text-hover-white u-text-white" href="/trips" style="padding: 10px 20px;">Tours</a>
-</li><li class="u-nav-item"><a class="u-border-2 u-border-active-white u-border-hover-white u-button-style u-nav-link u-text-active-white u-text-hover-white u-text-white" href="/createsite" style="padding: 10px 20px;">create site</a>
+</li><li class="u-nav-item"><a class="u-border-2 u-border-active-white u-border-hover-white u-button-style u-nav-link u-text-active-white u-text-hover-white u-text-white" href="/createsite" style="padding: 10px 20px;">Sites</a>
 </li></ul>
+
           </div>
+          
           <div class="u-custom-menu u-nav-container-collapse">
+            
             <div class="u-align-center u-black u-container-style u-inner-container-layout u-opacity u-opacity-95 u-sidenav">
               <div class="u-sidenav-overflow">
                 <div class="u-menu-close"></div>
@@ -69,12 +79,18 @@
 </li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="Contact.html" style="padding: 10px 20px;">Contact</a>
 </li></ul>
               </div>
-            </div>
+              
+            </div> 
             <div class="u-black u-menu-overlay u-opacity u-opacity-70"></div>
           </div>
+
         </nav>
-        <h6 class="u-custom-font u-text u-text-white u-text-1">Palestine Spirit</h6>
-      </div></header>
+
+        <a href="/"><h6 class="u-custom-font u-text u-text-white u-text-1">Palestine Spirit</h6></a>
+
+        <button type="button" class="btn btn-primary btn-sm" style="position: absolute; right: -80; top: 38%;">Login/Register</button>
+      </div>
+    </header>
     <section class="u-align-center u-clearfix u-section-1" id="carousel_4ddd">
       <img class="u-image u-image-1" src="images/default-image.jpg" data-image-width="2000" data-image-height="1333">
       <div id="carousel-bd35" data-interval="5000" data-u-ride="carousel" class="u-carousel u-expanded-width u-slider u-slider-1">
@@ -89,8 +105,8 @@
             <div class="u-container-layout u-container-layout-1">
               <div class="u-align-center u-container-style u-group u-shape-rectangle u-group-1" data-animation-name="fadeIn" data-animation-duration="1000" data-animation-delay="1000" data-animation-direction="Up">
                 <div class="u-container-layout u-valign-top u-container-layout-2">
-                  <h2 class="u-align-center u-text u-text-body-alt-color u-text-1">financial success</h2>
-                  <p class="u-align-center u-text u-text-2">Quis hendrerit dolor magna eget est lorem. Amet facilisis magna etiam tempor orci. Tellus integer feugiat scelerisque varius morbi enim nunc faucibus a.&nbsp;. Image from <a href="https://freepik.com/photos/backround" class="u-active-none u-border-1 u-border-white u-btn u-button-link u-button-style u-hover-none u-none u-text-body-alt-color u-btn-1">Freepik</a>
+                  <h2 class="u-align-center u-text u-text-body-alt-color u-text-1">Bethlehem</h2>
+                  <p class="u-align-center u-text u-text-2"> Bethlehem is one of the main cities in the Bethlehem Governorate, located in the north of the governorate, 10 km (6 miles) south of the Old City of Jerusalem. It is bordered on the east by the city of Beit Sahour, on the west by the cities of Beit Jala and Doha, on the north by Jerusalem and Sur Baher village, and on the south by Solomon's Pools and the villages of Al-Khader and Artas.
                   </p>
                 </div>
               </div>
@@ -101,8 +117,7 @@
               <div class="u-container-style u-group u-shape-rectangle u-group-2" data-animation-name="fadeIn" data-animation-duration="1000" data-animation-delay="0" data-animation-direction="Up">
                 <div class="u-container-layout u-valign-top u-container-layout-4">
                   <h2 class="u-align-center u-text u-text-body-alt-color u-text-3">On Top of the World</h2>
-                  <p class="u-align-center u-text u-text-4">Quis hendrerit dolor magna eget est lorem. Amet facilisis magna etiam tempor orci. Tellus integer feugiat scelerisque varius morbi enim nunc faucibus a. Image from <a href="https://nicepage.com/c/real-estate-html-templates" class="u-active-none u-border-1 u-border-white u-btn u-button-link u-button-style u-hover-none u-none u-text-body-alt-color u-btn-2" target="_blank">Freepik</a>
-                  </p>
+                  <p class="u-align-center u-text u-text-4">The largest city in occupied historical Palestine in terms of area and population, and the most important religiously and economically. It is known by other names in the Arabic language, such as: Bait Al-Maqdis, Al-Quds Al-Sharif, the first of the two Qiblas, and in the Bible as Jerusalem, and Israel officially calls it: Jerusalem Al-Quds.</p>
                 </div>
               </div>
             </div>
@@ -111,9 +126,8 @@
             <div class="u-container-layout u-container-layout-5">
               <div class="u-align-center u-container-style u-group u-shape-rectangle u-group-3" data-animation-name="fadeIn" data-animation-duration="1000" data-animation-delay="1000" data-animation-direction="Up">
                 <div class="u-container-layout u-valign-top u-container-layout-6">
-                  <h2 class="u-align-center u-text u-text-body-alt-color u-text-5">financial success</h2>
-                  <p class="u-align-center u-text u-text-6">Quis hendrerit dolor magna eget est lorem. Amet facilisis magna etiam tempor orci. Tellus integer feugiat scelerisque varius morbi enim nunc faucibus a.&nbsp;. Image from <a href="https://freepik.com/photos/backround" class="u-active-none u-border-1 u-border-white u-btn u-button-link u-button-style u-hover-none u-none u-text-body-alt-color u-btn-3">Freepik</a>
-                  </p>
+                  <h2 class="u-align-center u-text u-text-body-alt-color u-text-5">Bethlehem</h2>
+                  <p class="u-align-center u-text u-text-6">Bethlehem is one of the main cities in the Bethlehem Governorate, located in the north of the governorate, 10 km (6 miles) south of the Old City of Jerusalem. It is bordered on the east by the city of Beit Sahour, on the west by the cities of Beit Jala and Doha, on the north by Jerusalem and Sur Baher village, and on the south by Solomon's Pools and the villages of Al-Khader and Artas.</p>
                 </div>
               </div>
             </div>
@@ -122,9 +136,8 @@
             <div class="u-container-layout u-container-layout-7">
               <div class="u-align-center u-container-style u-group u-shape-rectangle u-group-4" data-animation-name="fadeIn" data-animation-duration="1000" data-animation-delay="1000" data-animation-direction="Up">
                 <div class="u-container-layout u-valign-top u-container-layout-8">
-                  <h2 class="u-align-center u-text u-text-body-alt-color u-text-7">financial success</h2>
-                  <p class="u-align-center u-text u-text-8">Quis hendrerit dolor magna eget est lorem. Amet facilisis magna etiam tempor orci. Tellus integer feugiat scelerisque varius morbi enim nunc faucibus a.&nbsp;. Image from <a href="https://freepik.com/photos/backround" class="u-active-none u-border-1 u-border-white u-btn u-button-link u-button-style u-hover-none u-none u-text-body-alt-color u-btn-4">Freepik</a>
-                  </p>
+                  <h2 class="u-align-center u-text u-text-body-alt-color u-text-7">Jericho</h2>
+                  <p class="u-align-center u-text u-text-8">Jericho is an ancient historic Palestinian city located in the West Bank near the Jordan River and north of the Dead Sea, dating back to 10,000 BC. It is the capital of Jericho Governorate and is the oldest city in history.</p>
                 </div>
               </div>
             </div>
@@ -146,13 +159,14 @@
             <svg viewBox="0 0 8 8"><path d="M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z"></path></svg>
           </span>
         </a>
+        
       </div>
     </section>
     <section class="u-align-center u-clearfix u-section-2" id="sec-f2e5">
       <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
         <h1 class="u-text u-text-1">About us</h1>
-        <p class="u-text u-text-2">Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of
-                disruptive innovation.</p>
+        <p class="u-text u-text-2">A Palestinian site that links tour guides in Palestine with visitors in order to stimulate tourism in Palestine in the easiest possible way and at a low cost. <br>
+          The idea for the site came after tourism was affected by several factors, the most important of which are the Corona virus and the Israeli occupation.</p>
       </div>
     </section>
     <section class="u-clearfix u-white u-section-3" id="carousel_fc26">
@@ -164,9 +178,10 @@
             <img src="images/7b75aee5633c9dc9e1407ce835892bdb.png" alt="" class="u-image u-image-contain u-image-default u-image-3" imgwidth="392" imgheight="518">
             <h4 class="u-align-center u-text u-text-white u-text-1">it's time for great</h4>
             <h1 class="u-align-center u-custom-font u-expanded-width-md u-text u-text-white u-text-2">Adventure</h1>
-            <a href="https://nicepage.com/joomla-templates" class="u-border-2 u-border-white u-btn u-button-style u-custom u-btn-1">start now</a>
+            <a href="/sign" class="u-border-2 u-border-white u-btn u-button-style u-custom u-btn-1">start now</a>
           </div>
         </div>
+        
       </div>
     </section>
     <section class="u-clearfix u-white u-section-4" id="carousel_13f5">
@@ -281,70 +296,102 @@
       <div class="u-clearfix u-sheet u-sheet-1">
         <div class="u-list u-list-1">
           <div class="u-repeater u-repeater-1">
-			<c:forEach items="${ cities}" var="city">
             <div class="u-container-style u-list-item u-repeater-item">
-              <div class="u-container-layout u-similar-container u-container-layout-6">
-                <img alt="" class="u-expanded-width u-image u-image-default u-image-6" data-image-width="550" data-image-height="424" src="images/city/${city.name}.jpeg">
-                <h3 class="u-text u-text-11"><c:out value="${city.name }"></c:out></h3>
-                <p class="u-text u-text-12">Sample text. Click to select the text box. Click again or double click to start editing the text.</p>
-                <a href="/${city.id}" class="u-active-none u-border-2 u-border-hover-palette-2-base u-border-palette-2-light-1 u-btn u-button-style u-hover-none u-none u-text-body-color u-btn-6">learn more</a>
+              <div class="u-container-layout u-similar-container u-container-layout-1">
+                <img alt="" class="u-expanded-width u-image u-image-default u-image-1" data-image-width="550" data-image-height="366" src="images/nablus.jpeg">
+                <h3 class="u-text u-text-1">Nablus</h3>
+                <p class="u-text u-text-2">Sample text. Click to select the text box. Click again or double click to start editing the text.</p>
+                <a href="" class="u-active-none u-border-2 u-border-hover-palette-2-base u-border-palette-2-light-1 u-btn u-button-style u-hover-none u-none u-text-body-color u-btn-1">learn more</a>
               </div>
             </div>
-            </c:forEach>
+            <div class="u-container-style u-list-item u-repeater-item">
+              <div class="u-container-layout u-similar-container u-container-layout-2">
+                <img alt="" class="u-expanded-width u-image u-image-default u-image-2" data-image-width="380" data-image-height="200" src="images/32016151431565552.jpeg">
+                <h3 class="u-text u-text-3">Jerusalem</h3>
+                <p class="u-text u-text-4">Sample text. Click to select the text box. Click again or double click to start editing the text.</p>
+                <a href="" class="u-active-none u-border-2 u-border-hover-palette-2-base u-border-palette-2-light-1 u-btn u-button-style u-hover-none u-none u-text-body-color u-btn-2">learn more</a>
+              </div>
+            </div>
+            <div class="u-container-style u-list-item u-repeater-item">
+              <div class="u-container-layout u-similar-container u-container-layout-3">
+                <img alt="" class="u-expanded-width u-image u-image-default u-image-3" data-image-width="550" data-image-height="367" src="images/hebron.jpeg">
+                <h3 class="u-text u-text-5">Hebron</h3>
+                <p class="u-text u-text-6">Sample text. Click to select the text box. Click again or double click to start editing the text.</p>
+                <a href="" class="u-active-none u-border-2 u-border-hover-palette-2-base u-border-palette-2-light-1 u-btn u-button-style u-hover-none u-none u-text-body-color u-btn-3">learn more</a>
+              </div>
+            </div>
+            <div class="u-container-style u-list-item u-repeater-item">
+              <div class="u-container-layout u-similar-container u-container-layout-5">
+                <img alt="" class="u-expanded-width u-image u-image-default u-image-5" data-image-width="550" data-image-height="366" src="images/jeric.jpg">
+                <h3 class="u-text u-text-9">Jericho</h3>
+                <p class="u-text u-text-10">Sample text. Click to select the text box. Click again or double click to start editing the text.</p>
+                <a href="" class="u-active-none u-border-2 u-border-hover-palette-2-base u-border-palette-2-light-1 u-btn u-button-style u-hover-none u-none u-text-body-color u-btn-5">learn more</a>
+              </div>
+            </div>
+            <div class="u-container-style u-list-item u-repeater-item">
+              <div class="u-container-layout u-similar-container u-container-layout-6">
+                <img alt="" class="u-expanded-width u-image u-image-default u-image-6" data-image-width="550" data-image-height="424" src="images/bet.jpeg">
+                <h3 class="u-text u-text-11">Bethlehem</h3>
+                <p class="u-text u-text-12">Sample text. Click to select the text box. Click again or double click to start editing the text.</p>
+                <a href="" class="u-active-none u-border-2 u-border-hover-palette-2-base u-border-palette-2-light-1 u-btn u-button-style u-hover-none u-none u-text-body-color u-btn-6">learn more</a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </section>
     <style class="u-overlap-style">.u-overlap:not(.u-sticky-scroll) .u-header {
+      
 }</style>
     
     
-    <footer class="u-clearfix u-footer u-grey-80" id="sec-d365"><div class="u-clearfix u-sheet u-sheet-1">
-        <div class="u-clearfix u-expanded-width u-gutter-30 u-layout-wrap u-layout-wrap-1">
-          <div class="u-gutter-0 u-layout">
-            <div class="u-layout-row">
-              <div class="u-align-center-sm u-align-center-xs u-align-left-md u-align-left-xl u-container-style u-layout-cell u-left-cell u-size-30 u-layout-cell-1">
-                <div class="u-container-layout u-valign-middle u-container-layout-1"><!--position-->
-                  <div data-position="" class="u-position u-position-1"><!--block-->
-                    <div class="u-block">
-                      <div class="u-block-container u-clearfix"><!--block_header-->
-                        <h5 class="u-block-header u-text"><!--block_header_content--> Contact us now!<!--/block_header_content--></h5><!--/block_header--><!--block_content-->
-                        <div class="u-block-content u-text"><!--block_content_content-->Palestinespirit@gmail.com<br>AXSOS Academy, Ramallah, Palestine<!--/block_content_content-->
-                        </div><!--/block_content-->
-                      </div>
-                    </div><!--/block-->
-                  </div><!--/position-->
-                </div>
+   
+    <footer class="u-clearfix u-footer u-grey-80" id="sec-d365"><div class="u-clearfix u-sheet u-sheet-1" style="height: 80px;">
+      <div class="u-clearfix u-expanded-width u-gutter-30 u-layout-wrap u-layout-wrap-1">
+        <div class="u-gutter-0 u-layout">
+          <div class="u-layout-row">
+            <div class="u-align-center-sm u-align-center-xs u-align-left-md u-align-left-xl u-container-style u-layout-cell u-left-cell u-size-30 u-layout-cell-1">
+              <div class="u-container-layout u-valign-middle u-container-layout-1"><!--position-->
+                <div data-position="" class="u-position u-position-1"><!--block-->
+                  <div class="u-block">
+                    <div class="u-block-container u-clearfix"><!--block_header-->
+                      <h5 class="u-block-header u-text"><!--block_header_content--> Contact us now!<!--/block_header_content--></h5><!--/block_header--><!--block_content-->
+                      <div class="u-block-content u-text"><!--block_content_content-->Palestinespirit@gmail.com<br>AXSOS Academy, Ramallah, Palestine<!--/block_content_content-->
+                      </div><!--/block_content-->
+                    </div>
+                  </div><!--/block-->
+                </div><!--/position-->
               </div>
-              <div class="u-align-center-sm u-align-center-xs u-align-left-md u-align-right-lg u-align-right-xl u-container-style u-layout-cell u-right-cell u-size-30 u-layout-cell-2">
-                <div class="u-container-layout u-valign-middle u-container-layout-2">
-                  <div class="u-social-icons u-spacing-10 u-social-icons-1">
-                    <a class="u-social-url" title="facebook" target="_blank" href=""><span class="u-icon u-icon-circle u-social-facebook u-social-icon u-icon-1"><svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 112 112" style=""><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-e670"></use></svg><svg class="u-svg-content" viewBox="0 0 112 112" x="0" y="0" id="svg-e670"><circle fill="currentColor" cx="56.1" cy="56.1" r="55"></circle><path fill="#FFFFFF" d="M73.5,31.6h-9.1c-1.4,0-3.6,0.8-3.6,3.9v8.5h12.6L72,58.3H60.8v40.8H43.9V58.3h-8V43.9h8v-9.2
-            c0-6.7,3.1-17,17-17h12.5v13.9H73.5z"></path></svg></span>
-                    </a>
-                    <a class="u-social-url" title="twitter" target="_blank" href=""><span class="u-icon u-icon-circle u-social-icon u-social-twitter u-icon-2"><svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 112 112" style=""><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-12c7"></use></svg><svg class="u-svg-content" viewBox="0 0 112 112" x="0" y="0" id="svg-12c7"><circle fill="currentColor" class="st0" cx="56.1" cy="56.1" r="55"></circle><path fill="#FFFFFF" d="M83.8,47.3c0,0.6,0,1.2,0,1.7c0,17.7-13.5,38.2-38.2,38.2C38,87.2,31,85,25,81.2c1,0.1,2.1,0.2,3.2,0.2
-            c6.3,0,12.1-2.1,16.7-5.7c-5.9-0.1-10.8-4-12.5-9.3c0.8,0.2,1.7,0.2,2.5,0.2c1.2,0,2.4-0.2,3.5-0.5c-6.1-1.2-10.8-6.7-10.8-13.1
-            c0-0.1,0-0.1,0-0.2c1.8,1,3.9,1.6,6.1,1.7c-3.6-2.4-6-6.5-6-11.2c0-2.5,0.7-4.8,1.8-6.7c6.6,8.1,16.5,13.5,27.6,14
-            c-0.2-1-0.3-2-0.3-3.1c0-7.4,6-13.4,13.4-13.4c3.9,0,7.3,1.6,9.8,4.2c3.1-0.6,5.9-1.7,8.5-3.3c-1,3.1-3.1,5.8-5.9,7.4
-            c2.7-0.3,5.3-1,7.7-2.1C88.7,43,86.4,45.4,83.8,47.3z"></path></svg></span>
-                    </a>
-                    <a class="u-social-url" title="instagram" target="_blank" href=""><span class="u-icon u-icon-circle u-social-icon u-social-instagram u-icon-3"><svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 112 112" style=""><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-e24c"></use></svg><svg class="u-svg-content" viewBox="0 0 112 112" x="0" y="0" id="svg-e24c"><circle fill="currentColor" cx="56.1" cy="56.1" r="55"></circle><path fill="#FFFFFF" d="M55.9,38.2c-9.9,0-17.9,8-17.9,17.9C38,66,46,74,55.9,74c9.9,0,17.9-8,17.9-17.9C73.8,46.2,65.8,38.2,55.9,38.2
-            z M55.9,66.4c-5.7,0-10.3-4.6-10.3-10.3c-0.1-5.7,4.6-10.3,10.3-10.3c5.7,0,10.3,4.6,10.3,10.3C66.2,61.8,61.6,66.4,55.9,66.4z"></path><path fill="#FFFFFF" d="M74.3,33.5c-2.3,0-4.2,1.9-4.2,4.2s1.9,4.2,4.2,4.2s4.2-1.9,4.2-4.2S76.6,33.5,74.3,33.5z"></path><path fill="#FFFFFF" d="M73.1,21.3H38.6c-9.7,0-17.5,7.9-17.5,17.5v34.5c0,9.7,7.9,17.6,17.5,17.6h34.5c9.7,0,17.5-7.9,17.5-17.5V38.8
-            C90.6,29.1,82.7,21.3,73.1,21.3z M83,73.3c0,5.5-4.5,9.9-9.9,9.9H38.6c-5.5,0-9.9-4.5-9.9-9.9V38.8c0-5.5,4.5-9.9,9.9-9.9h34.5
-            c5.5,0,9.9,4.5,9.9,9.9V73.3z"></path></svg></span>
-                    </a>
-                    <a class="u-social-url" title="linkedin" target="_blank" href=""><span class="u-icon u-icon-circle u-social-icon u-social-linkedin u-icon-4"><svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 112 112" style=""><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-84bc"></use></svg><svg class="u-svg-content" viewBox="0 0 112 112" x="0" y="0" id="svg-84bc"><circle fill="currentColor" cx="56.1" cy="56.1" r="55"></circle><path fill="#FFFFFF" d="M41.3,83.7H27.9V43.4h13.4V83.7z M34.6,37.9L34.6,37.9c-4.6,0-7.5-3.1-7.5-7c0-4,3-7,7.6-7s7.4,3,7.5,7
-            C42.2,34.8,39.2,37.9,34.6,37.9z M89.6,83.7H76.2V62.2c0-5.4-1.9-9.1-6.8-9.1c-3.7,0-5.9,2.5-6.9,4.9c-0.4,0.9-0.4,2.1-0.4,3.3v22.5
-            H48.7c0,0,0.2-36.5,0-40.3h13.4v5.7c1.8-2.7,5-6.7,12.1-6.7c8.8,0,15.4,5.8,15.4,18.1V83.7z"></path></svg></span>
-                    </a>
-                  </div>
+            </div>
+            <div class="u-align-center-sm u-align-center-xs u-align-left-md u-align-right-lg u-align-right-xl u-container-style u-layout-cell u-right-cell u-size-30 u-layout-cell-2">
+              <div class="u-container-layout u-valign-middle u-container-layout-2">
+                <div class="u-social-icons u-spacing-10 u-social-icons-1">
+                  <a class="u-social-url" title="facebook" target="_blank" href=""><span class="u-icon u-icon-circle u-social-facebook u-social-icon u-icon-1"><svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 112 112" style=""><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-e670"></use></svg><svg class="u-svg-content" viewBox="0 0 112 112" x="0" y="0" id="svg-e670"><circle fill="currentColor" cx="56.1" cy="56.1" r="55"></circle><path fill="#FFFFFF" d="M73.5,31.6h-9.1c-1.4,0-3.6,0.8-3.6,3.9v8.5h12.6L72,58.3H60.8v40.8H43.9V58.3h-8V43.9h8v-9.2
+          c0-6.7,3.1-17,17-17h12.5v13.9H73.5z"></path></svg></span>
+                  </a>
+                  <a class="u-social-url" title="twitter" target="_blank" href=""><span class="u-icon u-icon-circle u-social-icon u-social-twitter u-icon-2"><svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 112 112" style=""><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-12c7"></use></svg><svg class="u-svg-content" viewBox="0 0 112 112" x="0" y="0" id="svg-12c7"><circle fill="currentColor" class="st0" cx="56.1" cy="56.1" r="55"></circle><path fill="#FFFFFF" d="M83.8,47.3c0,0.6,0,1.2,0,1.7c0,17.7-13.5,38.2-38.2,38.2C38,87.2,31,85,25,81.2c1,0.1,2.1,0.2,3.2,0.2
+          c6.3,0,12.1-2.1,16.7-5.7c-5.9-0.1-10.8-4-12.5-9.3c0.8,0.2,1.7,0.2,2.5,0.2c1.2,0,2.4-0.2,3.5-0.5c-6.1-1.2-10.8-6.7-10.8-13.1
+          c0-0.1,0-0.1,0-0.2c1.8,1,3.9,1.6,6.1,1.7c-3.6-2.4-6-6.5-6-11.2c0-2.5,0.7-4.8,1.8-6.7c6.6,8.1,16.5,13.5,27.6,14
+          c-0.2-1-0.3-2-0.3-3.1c0-7.4,6-13.4,13.4-13.4c3.9,0,7.3,1.6,9.8,4.2c3.1-0.6,5.9-1.7,8.5-3.3c-1,3.1-3.1,5.8-5.9,7.4
+          c2.7-0.3,5.3-1,7.7-2.1C88.7,43,86.4,45.4,83.8,47.3z"></path></svg></span>
+                  </a>
+                  <a class="u-social-url" title="instagram" target="_blank" href=""><span class="u-icon u-icon-circle u-social-icon u-social-instagram u-icon-3"><svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 112 112" style=""><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-e24c"></use></svg><svg class="u-svg-content" viewBox="0 0 112 112" x="0" y="0" id="svg-e24c"><circle fill="currentColor" cx="56.1" cy="56.1" r="55"></circle><path fill="#FFFFFF" d="M55.9,38.2c-9.9,0-17.9,8-17.9,17.9C38,66,46,74,55.9,74c9.9,0,17.9-8,17.9-17.9C73.8,46.2,65.8,38.2,55.9,38.2
+          z M55.9,66.4c-5.7,0-10.3-4.6-10.3-10.3c-0.1-5.7,4.6-10.3,10.3-10.3c5.7,0,10.3,4.6,10.3,10.3C66.2,61.8,61.6,66.4,55.9,66.4z"></path><path fill="#FFFFFF" d="M74.3,33.5c-2.3,0-4.2,1.9-4.2,4.2s1.9,4.2,4.2,4.2s4.2-1.9,4.2-4.2S76.6,33.5,74.3,33.5z"></path><path fill="#FFFFFF" d="M73.1,21.3H38.6c-9.7,0-17.5,7.9-17.5,17.5v34.5c0,9.7,7.9,17.6,17.5,17.6h34.5c9.7,0,17.5-7.9,17.5-17.5V38.8
+          C90.6,29.1,82.7,21.3,73.1,21.3z M83,73.3c0,5.5-4.5,9.9-9.9,9.9H38.6c-5.5,0-9.9-4.5-9.9-9.9V38.8c0-5.5,4.5-9.9,9.9-9.9h34.5
+          c5.5,0,9.9,4.5,9.9,9.9V73.3z"></path></svg></span>
+                  </a>
+                  <a class="u-social-url" title="linkedin" target="_blank" href=""><span class="u-icon u-icon-circle u-social-icon u-social-linkedin u-icon-4"><svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 112 112" style=""><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-84bc"></use></svg><svg class="u-svg-content" viewBox="0 0 112 112" x="0" y="0" id="svg-84bc"><circle fill="currentColor" cx="56.1" cy="56.1" r="55"></circle><path fill="#FFFFFF" d="M41.3,83.7H27.9V43.4h13.4V83.7z M34.6,37.9L34.6,37.9c-4.6,0-7.5-3.1-7.5-7c0-4,3-7,7.6-7s7.4,3,7.5,7
+          C42.2,34.8,39.2,37.9,34.6,37.9z M89.6,83.7H76.2V62.2c0-5.4-1.9-9.1-6.8-9.1c-3.7,0-5.9,2.5-6.9,4.9c-0.4,0.9-0.4,2.1-0.4,3.3v22.5
+          H48.7c0,0,0.2-36.5,0-40.3h13.4v5.7c1.8-2.7,5-6.7,12.1-6.7c8.8,0,15.4,5.8,15.4,18.1V83.7z"></path></svg></span>
+                  </a>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <a href="https://nicepage.com/c/tiles-website-templates" class="u-active-none u-btn u-button-style u-hover-none u-none u-text-hover-palette-1-base u-btn-1"><span class="u-icon u-text-palette-1-base"><svg class="u-svg-content" viewBox="0 0 405.333 405.333" x="0px" y="0px" style="width: 1em; height: 1em;"><path d="M373.333,266.88c-25.003,0-49.493-3.904-72.704-11.563c-11.328-3.904-24.192-0.896-31.637,6.699l-46.016,34.752    c-52.8-28.181-86.592-61.952-114.389-114.368l33.813-44.928c8.512-8.512,11.563-20.971,7.915-32.64    C142.592,81.472,138.667,56.96,138.667,32c0-17.643-14.357-32-32-32H32C14.357,0,0,14.357,0,32    c0,205.845,167.488,373.333,373.333,373.333c17.643,0,32-14.357,32-32V298.88C405.333,281.237,390.976,266.88,373.333,266.88z"></path></svg><img></span>&nbsp;+1 (234) 567-8910
-        </a>
-      </div></footer>
+      </div>
+      <a class="u-active-none u-btn u-button-style u-hover-none u-none u-text-hover-palette-1-base u-btn-1"><span class="u-icon u-text-palette-1-base"><svg class="u-svg-content" viewBox="0 0 405.333 405.333" x="0px" y="0px" style="width: 1em; height: 1em;"><path d="M373.333,266.88c-25.003,0-49.493-3.904-72.704-11.563c-11.328-3.904-24.192-0.896-31.637,6.699l-46.016,34.752    c-52.8-28.181-86.592-61.952-114.389-114.368l33.813-44.928c8.512-8.512,11.563-20.971,7.915-32.64    C142.592,81.472,138.667,56.96,138.667,32c0-17.643-14.357-32-32-32H32C14.357,0,0,14.357,0,32    c0,205.845,167.488,373.333,373.333,373.333c17.643,0,32-14.357,32-32V298.88C405.333,281.237,390.976,266.88,373.333,266.88z"></path></svg><img></span>&nbsp;+1 (234) 567-8910
+      </a>
+    </div></footer>
   </body>
 </html>

@@ -33,7 +33,10 @@ public class UserController {
 	public String Index() {
 		return "home.jsp";
 	}
-
+	@GetMapping("/Nablus")
+	public String Nablus() {
+		return "Hebron.jsp";
+	}
 	@GetMapping("/sign")
 	public String sign(@ModelAttribute("registration") User user, Model model) {
 		return "signPage.jsp";
