@@ -7,3 +7,12 @@
 .red{
 	color: red;
 }
+
+.form-group > span {
+	display: block;
+	color: red;
+	font-weight: bold;
+}
+#delete-form {
+	display: inline-block;
+}

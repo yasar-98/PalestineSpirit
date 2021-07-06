@@ -20,6 +20,7 @@ public class UserValidator implements Validator{
     public void validate(Object target, Errors errors) {
         User user = (User) target;
         System.out.println("aaa");
+        
         if (!user.getPasswordConfirmation().equals(user.getPassword())) {
             // 3
         	 System.out.println("bbbb");
