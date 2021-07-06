@@ -15,7 +15,8 @@ import javax.persistence.OneToMany;
 import javax.persistence.PrePersist;
 import javax.persistence.PreUpdate;
 import javax.persistence.Table;
-import javax.validation.constraints.NotNull;
+import javax.validation.constraints.NotEmpty;
+import javax.validation.constraints.Size;
 
 @Entity
 @Table(name = "sites")
@@ -25,13 +26,13 @@ public class Site {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 
-	@NotNull
+	@Size(min = 1, message = "name must be present")
 	private String name;
 
-	@NotNull
+	@Size(min = 1, message = "location must be present")
 	private String location;
 
-	@NotNull
+	@Size(min = 1, message = "Description must be present")
 	private String desc;
 
 	@ManyToOne(fetch = FetchType.LAZY)
