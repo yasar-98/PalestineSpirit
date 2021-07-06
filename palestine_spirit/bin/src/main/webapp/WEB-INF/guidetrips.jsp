@@ -25,14 +25,19 @@
         <p>
             <form:label path="date">tour date:</form:label>
             <form:input type="date"  path="date"/>
+			<form:errors path="date" class="red"/>
+            
         </p>
         <p>
             <form:label path="capacity">capacity:</form:label>
 			<form:input  path="capacity"/> 
+				<form:errors path="capacity" class="red"/>
         </p>
         <p>
             <form:label path="fees">fees:</form:label>
 			<form:input  path="fees"/> 
+			<form:errors path="fees" class="red"/>
+
         </p>
                 <input type="submit" value="create trip"/>
     </form:form>

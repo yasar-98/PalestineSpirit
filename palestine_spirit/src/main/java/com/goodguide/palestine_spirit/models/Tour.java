@@ -1,5 +1,6 @@
 package com.goodguide.palestine_spirit.models;
 
+import java.time.LocalDate;
 import java.util.Date;
 import java.util.List;
 
@@ -16,6 +17,8 @@ import javax.persistence.ManyToOne;
 import javax.persistence.PrePersist;
 import javax.persistence.PreUpdate;
 import javax.persistence.Table;
+import javax.validation.constraints.Future;
+import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.NotNull;
 
 import org.hibernate.validator.constraints.Range;
@@ -27,15 +30,15 @@ public class Tour {
 	@Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
-
-	@NotNull
-	@DateTimeFormat(pattern = "yyyy-MM-DD")
+	
+	@Future
+	@DateTimeFormat(pattern = "yyyy-MM-dd")
 	private Date date;
-
+	
+	
 	@NotNull
-	@Range(min = 5)
 	private Integer capacity;
-
+	
 	@NotNull
 	private Integer fees;
 
@@ -65,6 +68,8 @@ public class Tour {
 	public void setId(Long id) {
 		this.id = id;
 	}
+
+
 
 	public Date getDate() {
 		return date;

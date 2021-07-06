@@ -92,5 +92,21 @@ public Cit createcity (Cit newcity) {
 		
 		return tors.save(tour);
 	}
+	
+	public List<Tour> alltours(){
+		return tors.findAll();
+	}
+	public void manageAttendees(Tour tour, User user, boolean isJoining) {
+		if(isJoining) {
+			tour.getTravellers().add(user);
+		} else {
+			tour.getTravellers().remove(user);
+		}
+		this.tors.save(tour);
+	}
+	public Tour findTourById(Long id) {
+		return this.tors.findById(id).orElse(null);
+	}
+
 }
 
