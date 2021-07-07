@@ -18,11 +18,7 @@ Technologies used to produce this project:
 Java, SpringBoot ,JSP ,JavaScript, Css, 
 
 
-Team Members :
-•	Momen Kittaneh
-•	Yassar Nasser
-•	Hadeel Qnaiby
-•	Hatem Ratrout
+
 
 
 
@@ -42,9 +38,19 @@ and the Google maps section is the perfect way to link you with the tours page .
  The sites Page : 
 
  ![40da2700-b42d-423e-8a90-e955f73dbc7c](https://user-images.githubusercontent.com/67499034/124721196-8e505700-df11-11eb-9249-eba29826fe7c.jpg)
-
  
-![40da2700-b42d-423e-8a90-e955f73dbc7c](https://user-images.githubusercontent.com/67499034/124721380-bdff5f00-df11-11eb-9bac-ffa8a546f020.jpg)
+ 
+ When the guide loges in as a guide he can create a trip :
+ 
+ ![76b51e28-4eee-4bf0-b8e6-fe59967699bb](https://user-images.githubusercontent.com/67499034/124721777-15053400-df12-11eb-8e6b-df4d42eb9805.jpg)
+
+
+Team Members :
+•	Momen Kittaneh
+•	Yassar Nasser
+•	Hadeel Qnaiby
+•	Hatem Ratrout
+ 
 
 
 
