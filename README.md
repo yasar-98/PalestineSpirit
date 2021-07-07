@@ -1,3 +1,4 @@
+
 Palestine Spirit
 
 Palestine Spirit  ( Java Project)   :  
@@ -23,16 +24,27 @@ Team Members :
 •	Hadeel Qnaiby
 •	Hatem Ratrout
 
+
+
+![betl](https://user-images.githubusercontent.com/67499034/124720788-2e59b080-df11-11eb-911f-863e825e1327.jpg)
+
 The homepage is broken up the way you might traditionally browse a DMO’s website,
 with sections like “Tours” “Archaeological sites” and “cities.” But rather than reading long lists, you’re scrolling through gorgeous photos that are the motivation to learn 
 more about old civilizations & their great history .
+ 
+ ![c39f575d-ce70-423b-bf85-7e1ff4a58427](https://user-images.githubusercontent.com/67499034/124721092-7aa4f080-df11-11eb-85e8-cad349f7d69e.jpg)
+
  
 When  Visit, a city pages is simple and visually engaging, the real win here is the videos ,
 the organization is clearly prioritizing video content. But the content itself shows that the video is the next best thing to actually experience the destination,
 and the Google maps section is the perfect way to link you with the tours page .
  
- 
+ The sites Page : 
 
-The Tours Page : 
+ ![40da2700-b42d-423e-8a90-e955f73dbc7c](https://user-images.githubusercontent.com/67499034/124721196-8e505700-df11-11eb-9249-eba29826fe7c.jpg)
+
+ 
+![40da2700-b42d-423e-8a90-e955f73dbc7c](https://user-images.githubusercontent.com/67499034/124721380-bdff5f00-df11-11eb-9bac-ffa8a546f020.jpg)
+
 
 
