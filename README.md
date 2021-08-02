@@ -47,7 +47,7 @@ and the Google maps section is the perfect way to link you with the tours page .
 
 Team Members :
 •	Momen Kittaneh
-•	Yassar Nasser
+•	Yasar Naser
 •	Hadeel Qnaiby
 •	Hatem Ratrout
  
