@@ -42,14 +42,8 @@
     <meta property="og:type" content="website">
   </head>
   <body class="u-body u-overlap u-overlap-transparent"><header class="u-align-center-xs u-clearfix u-header u-header" id="sec-4f75"><div class="u-clearfix u-sheet u-sheet-1">
-        <form action="#" method="get" class="u-border-1 u-border-white u-radius-24 u-search u-search-right u-search-1" style="margin-right: 40px;">
-          <button class="u-search-button" type="submit">
-            <span class="u-search-icon u-spacing-10 u-text-white">
-              <svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 56.966 56.966" style=""><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-b04b"></use></svg>
-              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="svg-b04b" x="0px" y="0px" viewBox="0 0 56.966 56.966" style="enable-background:new 0 0 56.966 56.966;" xml:space="preserve" class="u-svg-content"><path d="M55.146,51.887L41.588,37.786c3.486-4.144,5.396-9.358,5.396-14.786c0-12.682-10.318-23-23-23s-23,10.318-23,23  s10.318,23,23,23c4.761,0,9.298-1.436,13.177-4.162l13.661,14.208c0.571,0.593,1.339,0.92,2.162,0.92  c0.779,0,1.518-0.297,2.079-0.837C56.255,54.982,56.293,53.08,55.146,51.887z M23.984,6c9.374,0,17,7.626,17,17s-7.626,17-17,17  s-17-7.626-17-17S14.61,6,23.984,6z"></path><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
-            </span>
-          </button>
-          <input class="u-search-input u-text-white" type="search" name="search" value="" placeholder="Search">
+        <form action="#" method="get" class="u-border-0 u-border-white u-radius-24 u-search u-search-right u-search-1" style="margin-right: 40px;">
+         
         </form>
         
 
@@ -61,13 +55,45 @@
 </g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
             </a>
           </div>
-          <div class="u-custom-menu u-nav-container">
-            <ul class="u-nav u-spacing-2 u-unstyled u-nav-1"><li class="u-nav-item"><a class="u-border-2 u-border-active-white u-border-hover-white u-button-style u-nav-link u-text-active-white u-text-hover-white u-text-white" href="/" style="padding: 10px 20px;">Home</a>
-</li><li class="u-nav-item"><a class="u-border-2 u-border-active-white u-border-hover-white u-button-style u-nav-link u-text-active-white u-text-hover-white u-text-white" href="/trips" style="padding: 10px 20px;">Tours</a>
-</li><li class="u-nav-item"><a class="u-border-2 u-border-active-white u-border-hover-white u-button-style u-nav-link u-text-active-white u-text-hover-white u-text-white" href="/createsite" style="padding: 10px 20px;">Sites</a>
-</li></ul>
+				<c:choose>
+					<c:when test="${ role == 1 }">
+						<div class="u-custom-menu u-nav-container">
+							<ul class="u-nav u-spacing-2 u-unstyled u-nav-1">
+								<li class="u-nav-item"><a
+									class="u-border-2 u-border-active-white u-border-hover-white u-button-style u-nav-link u-text-active-white u-text-hover-white u-text-white"
+									href="/" style="padding: 10px 20px;">Home</a></li>
+								<li class="u-nav-item"><a
+									class="u-border-2 u-border-active-white u-border-hover-white u-button-style u-nav-link u-text-active-white u-text-hover-white u-text-white"
+									href="/userlist" style="padding: 10px 20px;">user list</a></li>
+								<li class="u-nav-item"><a
+									class="u-border-2 u-border-active-white u-border-hover-white u-button-style u-nav-link u-text-active-white u-text-hover-white u-text-white"
+									href="/createsite" style="padding: 10px 20px;">Sites</a></li>
+							</ul></div>
+					</c:when>
+					<c:when test="${ role == 2 }">
+						<div class="u-custom-menu u-nav-container">
+							<ul class="u-nav u-spacing-2 u-unstyled u-nav-1">
+								<li class="u-nav-item"><a
+									class="u-border-2 u-border-active-white u-border-hover-white u-button-style u-nav-link u-text-active-white u-text-hover-white u-text-white"
+									href="/" style="padding: 10px 20px;">Home</a></li>
+								<li class="u-nav-item"><a
+									class="u-border-2 u-border-active-white u-border-hover-white u-button-style u-nav-link u-text-active-white u-text-hover-white u-text-white"
+									href="/trips" style="padding: 10px 20px;">TIRPS</a></li>
+							</ul></div>
+					</c:when>
+					<c:when test="${ role == 3 || role == 4}">
+						<div class="u-custom-menu u-nav-container">
+							<ul class="u-nav u-spacing-2 u-unstyled u-nav-1">
+								<li class="u-nav-item"><a
+									class="u-border-2 u-border-active-white u-border-hover-white u-button-style u-nav-link u-text-active-white u-text-hover-white u-text-white"
+									href="/" style="padding: 10px 20px;">Home</a></li>
+								<li class="u-nav-item"><a
+									class="u-border-2 u-border-active-white u-border-hover-white u-button-style u-nav-link u-text-active-white u-text-hover-white u-text-white"
+									href="/tours" style="padding: 10px 20px;">Tours</a></li>
+							</ul></div>
+					</c:when>
 
-          </div>
+				</c:choose>
           
           <div class="u-custom-menu u-nav-container-collapse">
             
@@ -87,8 +113,15 @@
         </nav>
 
         <a href="/"><h6 class="u-custom-font u-text u-text-white u-text-1">Palestine Spirit</h6></a>
-		
+						<c:choose>
+					<c:when test="${ role == 1 || role == 2 || role == 3}">
+					        <a href="/logout"><button type="button" class="btn btn-primary btn-sm" style="position: absolute; right: -80; top: 38%;">logout <c:out value="${ user.username }"></c:out></button></a></div>
+					
+					</c:when>
+					<c:otherwise>
         <a href="/sign"><button type="button" class="btn btn-primary btn-sm" style="position: absolute; right: -80; top: 38%;">Login/Register</button></a></div>
+    					   </c:otherwise> </c:choose>
+    
     </header>
     <section class="u-align-center u-clearfix u-section-1" id="carousel_4ddd">
       <img class="u-image u-image-1" src="images/default-image.jpg" data-image-width="2000" data-image-height="1333">
@@ -105,8 +138,6 @@
               <div class="u-align-center u-container-style u-group u-shape-rectangle u-group-1" data-animation-name="fadeIn" data-animation-duration="1000" data-animation-delay="1000" data-animation-direction="Up">
                 <div class="u-container-layout u-valign-top u-container-layout-2">
                   <h2 class="u-align-center u-text u-text-body-alt-color u-text-1">Bethlehem</h2>
-                  <p class="u-align-center u-text u-text-2"> Bethlehem is one of the main cities in the Bethlehem Governorate, located in the north of the governorate, 10 km (6 miles) south of the Old City of Jerusalem. It is bordered on the east by the city of Beit Sahour, on the west by the cities of Beit Jala and Doha, on the north by Jerusalem and Sur Baher village, and on the south by Solomon's Pools and the villages of Al-Khader and Artas.
-                  </p>
                 </div>
               </div>
             </div>
@@ -116,7 +147,6 @@
               <div class="u-container-style u-group u-shape-rectangle u-group-2" data-animation-name="fadeIn" data-animation-duration="1000" data-animation-delay="0" data-animation-direction="Up">
                 <div class="u-container-layout u-valign-top u-container-layout-4">
                   <h2 class="u-align-center u-text u-text-body-alt-color u-text-3">On Top of the World</h2>
-                  <p class="u-align-center u-text u-text-4">The largest city in occupied historical Palestine in terms of area and population, and the most important religiously and economically. It is known by other names in the Arabic language, such as: Bait Al-Maqdis, Al-Quds Al-Sharif, the first of the two Qiblas, and in the Bible as Jerusalem, and Israel officially calls it: Jerusalem Al-Quds.</p>
                 </div>
               </div>
             </div>
@@ -126,7 +156,6 @@
               <div class="u-align-center u-container-style u-group u-shape-rectangle u-group-3" data-animation-name="fadeIn" data-animation-duration="1000" data-animation-delay="1000" data-animation-direction="Up">
                 <div class="u-container-layout u-valign-top u-container-layout-6">
                   <h2 class="u-align-center u-text u-text-body-alt-color u-text-5">Bethlehem</h2>
-                  <p class="u-align-center u-text u-text-6">Bethlehem is one of the main cities in the Bethlehem Governorate, located in the north of the governorate, 10 km (6 miles) south of the Old City of Jerusalem. It is bordered on the east by the city of Beit Sahour, on the west by the cities of Beit Jala and Doha, on the north by Jerusalem and Sur Baher village, and on the south by Solomon's Pools and the villages of Al-Khader and Artas.</p>
                 </div>
               </div>
             </div>
@@ -136,7 +165,6 @@
               <div class="u-align-center u-container-style u-group u-shape-rectangle u-group-4" data-animation-name="fadeIn" data-animation-duration="1000" data-animation-delay="1000" data-animation-direction="Up">
                 <div class="u-container-layout u-valign-top u-container-layout-8">
                   <h2 class="u-align-center u-text u-text-body-alt-color u-text-7">Jericho</h2>
-                  <p class="u-align-center u-text u-text-8">Jericho is an ancient historic Palestinian city located in the West Bank near the Jordan River and north of the Dead Sea, dating back to 10,000 BC. It is the capital of Jericho Governorate and is the oldest city in history.</p>
                 </div>
               </div>
             </div>
@@ -183,7 +211,7 @@
         
       </div>
     </section>
-    <section class="u-clearfix u-white u-section-4" id="carousel_13f5">
+    <section class="u-clearfix u-white u-section-4" id="carousel_13f5" style="margin-bottom: -400px;">
       <div class="u-clearfix u-sheet u-sheet-1">
         <div class="u-clearfix u-disable-padding u-expanded-width u-gutter-30 u-layout-wrap u-layout-wrap-1">
           <div class="u-layout">
@@ -279,7 +307,7 @@
         </div>
       </div>
     </section>
-    <section class="u-clearfix u-image u-section-5" id="carousel_2808">
+    <section class="u-clearfix u-image u-section-5" id="carousel_2808" >
       <div class="u-clearfix u-sheet u-sheet-1">
         <div class="u-container-style u-expanded-width-sm u-expanded-width-xs u-group u-similar-fill u-group-1">
           <div class="u-container-layout u-container-layout-1">

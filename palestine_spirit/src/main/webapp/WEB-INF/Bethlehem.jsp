@@ -54,13 +54,46 @@
 </g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
             </a>
           </div>
-          <div class="u-custom-menu u-nav-container">
-            <ul class="u-nav u-spacing-2 u-unstyled u-nav-1"><li class="u-nav-item"><a class="u-border-2 u-border-active-white u-border-hover-white u-button-style u-nav-link u-text-active-white u-text-hover-white u-text-white" href="/" style="padding: 10px 20px;">Home</a>
-</li><li class="u-nav-item"><a class="u-border-2 u-border-active-white u-border-hover-white u-button-style u-nav-link u-text-active-white u-text-hover-white u-text-white" href="Tours.html" style="padding: 10px 20px;">Tours</a>
-</li><li class="u-nav-item"><a class="u-border-2 u-border-active-white u-border-hover-white u-button-style u-nav-link u-text-active-white u-text-hover-white u-text-white" href="Contact.html" style="padding: 10px 20px;">Contact</a>
-</li></ul>
-          </div>
-          <div class="u-custom-menu u-nav-container-collapse">
+				<c:choose>
+					<c:when test="${ role == 1 }">
+						<div class="u-custom-menu u-nav-container">
+							<ul class="u-nav u-spacing-2 u-unstyled u-nav-1">
+								<li class="u-nav-item"><a
+									class="u-border-2 u-border-active-white u-border-hover-white u-button-style u-nav-link u-text-active-white u-text-hover-white u-text-white"
+									href="/" style="padding: 10px 20px;">Home</a></li>
+								<li class="u-nav-item"><a
+									class="u-border-2 u-border-active-white u-border-hover-white u-button-style u-nav-link u-text-active-white u-text-hover-white u-text-white"
+									href="/userlist" style="padding: 10px 20px;">user list</a></li>
+								<li class="u-nav-item"><a
+									class="u-border-2 u-border-active-white u-border-hover-white u-button-style u-nav-link u-text-active-white u-text-hover-white u-text-white"
+									href="/createsite" style="padding: 10px 20px;">Sites</a></li>
+							</ul></div>
+					</c:when>
+					<c:when test="${ role == 2 }">
+						<div class="u-custom-menu u-nav-container">
+							<ul class="u-nav u-spacing-2 u-unstyled u-nav-1">
+								<li class="u-nav-item"><a
+									class="u-border-2 u-border-active-white u-border-hover-white u-button-style u-nav-link u-text-active-white u-text-hover-white u-text-white"
+									href="/" style="padding: 10px 20px;">Home</a></li>
+								<li class="u-nav-item"><a
+									class="u-border-2 u-border-active-white u-border-hover-white u-button-style u-nav-link u-text-active-white u-text-hover-white u-text-white"
+									href="/trips" style="padding: 10px 20px;">TIRPS</a></li>
+							</ul></div>
+					</c:when>
+					<c:when test="${ role == 3 }">
+						<div class="u-custom-menu u-nav-container">
+							<ul class="u-nav u-spacing-2 u-unstyled u-nav-1">
+								<li class="u-nav-item"><a
+									class="u-border-2 u-border-active-white u-border-hover-white u-button-style u-nav-link u-text-active-white u-text-hover-white u-text-white"
+									href="/" style="padding: 10px 20px;">Home</a></li>
+								<li class="u-nav-item"><a
+									class="u-border-2 u-border-active-white u-border-hover-white u-button-style u-nav-link u-text-active-white u-text-hover-white u-text-white"
+									href="/tours" style="padding: 10px 20px;">Tours</a></li>
+							</ul></div>
+					</c:when>
+
+				</c:choose>
+				          <div class="u-custom-menu u-nav-container-collapse">
             <div class="u-align-center u-black u-container-style u-inner-container-layout u-opacity u-opacity-95 u-sidenav">
               <div class="u-sidenav-overflow">
                 <div class="u-menu-close"></div>
@@ -73,7 +106,7 @@
             <div class="u-black u-menu-overlay u-opacity u-opacity-70"></div>
           </div>
         </nav>
-        <h6 class="u-custom-font u-text u-text-white u-text-1">Palestine Spirit</h6>
+        <a href="/"><h6 class="u-custom-font u-text u-text-white u-text-1">Palestine Spirit</h6></a>
       </div></header> 
     <section class="u-clearfix u-image u-shading u-section-1" id="sec-e07b" data-image-width="1600" data-image-height="763">
       <div class="u-clearfix u-gutter-12 u-layout-wrap u-layout-wrap-1">

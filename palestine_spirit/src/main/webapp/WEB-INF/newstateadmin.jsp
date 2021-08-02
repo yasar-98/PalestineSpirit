@@ -33,12 +33,45 @@
 </g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
             </a>
           </div>
-          <div class="u-custom-menu u-nav-container">
-            <ul class="u-nav u-spacing-2 u-unstyled u-nav-1"><li class="u-nav-item"><a class="u-border-2 u-border-active-white u-border-hover-white u-button-style u-nav-link u-text-active-white u-text-hover-white u-text-white" href="/" style="padding: 10px 20px;">Home</a>
-</li><li class="u-nav-item"><a class="u-border-2 u-border-active-white u-border-hover-white u-button-style u-nav-link u-text-active-white u-text-hover-white u-text-white" href="/trips" style="padding: 10px 20px;">Tours</a>
-</li><li class="u-nav-item"><a class="u-border-2 u-border-active-white u-border-hover-white u-button-style u-nav-link u-text-active-white u-text-hover-white u-text-white" href="/createsite" style="padding: 10px 20px;">Sites</a>
-</li></ul>
-          </div>
+				<c:choose>
+					<c:when test="${ role == 1 }">
+						<div class="u-custom-menu u-nav-container">
+							<ul class="u-nav u-spacing-2 u-unstyled u-nav-1">
+								<li class="u-nav-item"><a
+									class="u-border-2 u-border-active-white u-border-hover-white u-button-style u-nav-link u-text-active-white u-text-hover-white u-text-white"
+									href="/" style="padding: 10px 20px;">Home</a></li>
+								<li class="u-nav-item"><a
+									class="u-border-2 u-border-active-white u-border-hover-white u-button-style u-nav-link u-text-active-white u-text-hover-white u-text-white"
+									href="/userlist" style="padding: 10px 20px;">user list</a></li>
+								<li class="u-nav-item"><a
+									class="u-border-2 u-border-active-white u-border-hover-white u-button-style u-nav-link u-text-active-white u-text-hover-white u-text-white"
+									href="/createsite" style="padding: 10px 20px;">Sites</a></li>
+							</ul></div>
+					</c:when>
+					<c:when test="${ role == 2 }">
+						<div class="u-custom-menu u-nav-container">
+							<ul class="u-nav u-spacing-2 u-unstyled u-nav-1">
+								<li class="u-nav-item"><a
+									class="u-border-2 u-border-active-white u-border-hover-white u-button-style u-nav-link u-text-active-white u-text-hover-white u-text-white"
+									href="/" style="padding: 10px 20px;">Home</a></li>
+								<li class="u-nav-item"><a
+									class="u-border-2 u-border-active-white u-border-hover-white u-button-style u-nav-link u-text-active-white u-text-hover-white u-text-white"
+									href="/trips" style="padding: 10px 20px;">TIRPS</a></li>
+							</ul></div>
+					</c:when>
+					<c:when test="${ role == 3 }">
+						<div class="u-custom-menu u-nav-container">
+							<ul class="u-nav u-spacing-2 u-unstyled u-nav-1">
+								<li class="u-nav-item"><a
+									class="u-border-2 u-border-active-white u-border-hover-white u-button-style u-nav-link u-text-active-white u-text-hover-white u-text-white"
+									href="/" style="padding: 10px 20px;">Home</a></li>
+								<li class="u-nav-item"><a
+									class="u-border-2 u-border-active-white u-border-hover-white u-button-style u-nav-link u-text-active-white u-text-hover-white u-text-white"
+									href="/tours" style="padding: 10px 20px;">Tours</a></li>
+							</ul></div>
+					</c:when>
+
+				</c:choose>
           <div class="u-custom-menu u-nav-container-collapse">
             <div class="u-align-center u-black u-container-style u-inner-container-layout u-opacity u-opacity-95 u-sidenav">
               <div class="u-sidenav-overflow">
@@ -78,7 +111,7 @@
 
 		</tbody>
 	</table>
-	<form:form method="POST" action="/createsite" modelAttribute="site">
+	<form:form method="POST" action="/createsite" modelAttribute="site" enctype="multipart/form-data" >
 		<p>
 			<form:label path="name" style="margin-right: 22px;">Site name: </form:label>
 			<form:input path="name" />
@@ -105,6 +138,8 @@
 				</c:forEach>
 			</form:select>
 		</p>
+		<form:input type="file" path="extraimage1" accept= "image/png , image/jpeg" name="extraimage1"/>
+		<form:input type="file" path="extraimage2" accept= "image/png , image/jpeg" name="extraimage2"/>
 
 
 		<input type="submit" value="Create a new site" class="btn btn-primary"/>
